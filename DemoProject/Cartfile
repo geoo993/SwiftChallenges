@@ -1,0 +1,18 @@
+# == Created by Daniel Asher on 24/11/2017.
+# == Copyright © 2017 LEXI LABS. All rights reserved.
+#
+# carthage bootstrap --no-use-binaries --cache-builds --platform ios
+# or (beware!)
+# carthage update [RepositoryName] --no-use-binaries --cache-builds --platform ios
+#
+# NOTE: AWS optimization. AWS builds over 30 frameworks that take > 30 minutes.
+# == SOLUTION:
+# carthage update --no-build
+# find ./Carthage/Checkouts/aws-sdk-ios/AWSiOSSDKv2.xcodeproj/xcshareddata/xcschemes ! -name "AWSCore.xcscheme" ! -name "AWSS3.xcscheme" -delete
+# find ./Carthage/Checkouts/aws-sdk-ios/AWSAuthSDK/AWSAuthSDK.xcodeproj/xcshareddata/xcschemes ! -name "AWSAuthCore.xcscheme" -delete
+# carthage build --platform iOS --no-use-binaries --cache-builds
+# ==
+#
+github "onevcat/Kingfisher"
+github "Quick/Quick"
+github "Quick/Nimble"
