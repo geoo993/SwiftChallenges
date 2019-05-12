@@ -93,38 +93,3 @@ class ConcreteClass2: AbstractProtocol {
         print("ConcreteClass2 says: Overridden Hook1\n")
     }
 }
-
-
-/*
-enum Genre {
-    case fiction
-    case nonfiction
-    case phylosophy
-    case biology
-    case novel
-    case romance
-    case crime
-    case horror
-    case mystery
-}
-enum Stars {
-    case five
-    case four
-    case three
-    case two
-    case one
-}
-
-protocol Book {
-    var title: String { set get }
-    var authors: String { set get }
-    var coverImage: String { set get }
-    var publisher: String { set get }
-    var releaseDate: Date { get }
-    var language: String { get }
-    var pages: Int { get }
-    var stars: Stars { get }
-    var genre: Genre { get }
-    func printSummary()
-}
-*/

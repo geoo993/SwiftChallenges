@@ -128,6 +128,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C7229E0D22877366009980E6 /* SingleResponsabilityPrinciple.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SingleResponsabilityPrinciple.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E0E2287785F009980E6 /* OpenClosedPrinciple.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OpenClosedPrinciple.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E0F22880F97009980E6 /* LiskovSubstitutionPrinciple.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LiskovSubstitutionPrinciple.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E10228815ED009980E6 /* InterfaceSegregationPrinciple.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = InterfaceSegregationPrinciple.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E1122881AAC009980E6 /* DependencyInversionPrinciple.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DependencyInversionPrinciple.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E1222882BB8009980E6 /* DesignPatterns.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DesignPatterns.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E1322884666009980E6 /* AbstractFactoryDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AbstractFactoryDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E14228849E6009980E6 /* PrototypeDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrototypeDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E1522884A02009980E6 /* SingletonDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SingletonDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E1622885D8D009980E6 /* AdapterDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AdapterDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E17228862CE009980E6 /* FacadeDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FacadeDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E18228862E4009980E6 /* DecoratorDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DecoratorDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E1922886648009980E6 /* BridgeDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BridgeDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E4A2288C5EA009980E6 /* ProxyDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProxyDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E4B2288C609009980E6 /* FlyweightDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FlyweightDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7296E792286F8EE00E99627 /* albums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
 		C7296E7B2286F92400E99627 /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
 		C7296E7D2286F98A00E99627 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
@@ -212,7 +227,7 @@
 		C75128CF2287689700735980 /* TemplateMethodDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TemplateMethodDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7874DFF228700260088144B /* DependencyInjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionTests.swift; sourceTree = "<group>"; };
 		C7D242822286E2F100A5964B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C7FAF0C5228719710038253C /* FactoryDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FactoryDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7FAF0C5228719710038253C /* FactoryMethodDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FactoryMethodDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7FAF0C6228719E70038253C /* ValueAndReferenceTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ValueAndReferenceTypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7FAF0C722871A490038253C /* DependencyInjectionPrinciple.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DependencyInjectionPrinciple.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7FAF0C822871AFB0038253C /* TechnicalTest1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TechnicalTest1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -764,12 +779,27 @@
 		C75128AD22874D8C00735980 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				C7FAF0C822871AFB0038253C /* TechnicalTest1.playground */,
+				C7229E0D22877366009980E6 /* SingleResponsabilityPrinciple.playground */,
+				C7229E0E2287785F009980E6 /* OpenClosedPrinciple.playground */,
+				C7229E0F22880F97009980E6 /* LiskovSubstitutionPrinciple.playground */,
+				C7229E10228815ED009980E6 /* InterfaceSegregationPrinciple.playground */,
+				C7229E1122881AAC009980E6 /* DependencyInversionPrinciple.playground */,
 				C7FAF0C722871A490038253C /* DependencyInjectionPrinciple.playground */,
-				C7FAF0C6228719E70038253C /* ValueAndReferenceTypes.playground */,
+				C7229E1222882BB8009980E6 /* DesignPatterns.playground */,
 				C75128CF2287689700735980 /* TemplateMethodDesignPattern.playground */,
-				C7FAF0C5228719710038253C /* FactoryDesignPattern.playground */,
+				C7FAF0C5228719710038253C /* FactoryMethodDesignPattern.playground */,
+				C7229E1322884666009980E6 /* AbstractFactoryDesignPattern.playground */,
 				C75128CE22875FA000735980 /* BuilderDesignPattern.playground */,
+				C7229E14228849E6009980E6 /* PrototypeDesignPattern.playground */,
+				C7229E1522884A02009980E6 /* SingletonDesignPattern.playground */,
+				C7229E1622885D8D009980E6 /* AdapterDesignPattern.playground */,
+				C7229E1922886648009980E6 /* BridgeDesignPattern.playground */,
+				C7229E18228862E4009980E6 /* DecoratorDesignPattern.playground */,
+				C7229E17228862CE009980E6 /* FacadeDesignPattern.playground */,
+				C7229E4B2288C609009980E6 /* FlyweightDesignPattern.playground */,
+				C7229E4A2288C5EA009980E6 /* ProxyDesignPattern.playground */,
+				C7FAF0C6228719E70038253C /* ValueAndReferenceTypes.playground */,
+				C7FAF0C822871AFB0038253C /* TechnicalTest1.playground */,
 				C75128CB2287513F00735980 /* SourceFiles */,
 				C75128AE22874D8C00735980 /* Playgrounds.h */,
 				C75128AF22874D8C00735980 /* Info.plist */,

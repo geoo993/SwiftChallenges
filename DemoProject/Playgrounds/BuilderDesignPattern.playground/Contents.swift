@@ -99,6 +99,7 @@ class BurgerBuilder: BuilderProtocol {
     }
 }
 
+// A builder is essentially a seperate component, when piecewise construction is complicated then you provide a special API for doing it succinctly
 let builder = BurgerBuilder()
 
 //1 stage
