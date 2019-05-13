@@ -143,6 +143,15 @@
 		C7229E1922886648009980E6 /* BridgeDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BridgeDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7229E4A2288C5EA009980E6 /* ProxyDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProxyDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7229E4B2288C609009980E6 /* FlyweightDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FlyweightDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E4C2289BC3E009980E6 /* ChainOfResponsibilityDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ChainOfResponsibilityDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E4D228A0DFE009980E6 /* CommandDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CommandDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E4E228A0E1E009980E6 /* IteratorDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IteratorDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E4F228A0E59009980E6 /* MediatorDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MediatorDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E50228A0E75009980E6 /* MementoDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MementoDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E51228A0E9B009980E6 /* ObserverDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ObserverDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E52228A0EBE009980E6 /* StrategyDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StrategyDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E53228A0EE1009980E6 /* StateDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StateDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7229E54228A0F07009980E6 /* VisitorDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = VisitorDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7296E792286F8EE00E99627 /* albums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
 		C7296E7B2286F92400E99627 /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
 		C7296E7D2286F98A00E99627 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
@@ -786,7 +795,6 @@
 				C7229E1122881AAC009980E6 /* DependencyInversionPrinciple.playground */,
 				C7FAF0C722871A490038253C /* DependencyInjectionPrinciple.playground */,
 				C7229E1222882BB8009980E6 /* DesignPatterns.playground */,
-				C75128CF2287689700735980 /* TemplateMethodDesignPattern.playground */,
 				C7FAF0C5228719710038253C /* FactoryMethodDesignPattern.playground */,
 				C7229E1322884666009980E6 /* AbstractFactoryDesignPattern.playground */,
 				C75128CE22875FA000735980 /* BuilderDesignPattern.playground */,
@@ -798,6 +806,16 @@
 				C7229E17228862CE009980E6 /* FacadeDesignPattern.playground */,
 				C7229E4B2288C609009980E6 /* FlyweightDesignPattern.playground */,
 				C7229E4A2288C5EA009980E6 /* ProxyDesignPattern.playground */,
+				C7229E4C2289BC3E009980E6 /* ChainOfResponsibilityDesignPattern.playground */,
+				C75128CF2287689700735980 /* TemplateMethodDesignPattern.playground */,
+				C7229E4D228A0DFE009980E6 /* CommandDesignPattern.playground */,
+				C7229E4E228A0E1E009980E6 /* IteratorDesignPattern.playground */,
+				C7229E4F228A0E59009980E6 /* MediatorDesignPattern.playground */,
+				C7229E50228A0E75009980E6 /* MementoDesignPattern.playground */,
+				C7229E51228A0E9B009980E6 /* ObserverDesignPattern.playground */,
+				C7229E52228A0EBE009980E6 /* StrategyDesignPattern.playground */,
+				C7229E53228A0EE1009980E6 /* StateDesignPattern.playground */,
+				C7229E54228A0F07009980E6 /* VisitorDesignPattern.playground */,
 				C7FAF0C6228719E70038253C /* ValueAndReferenceTypes.playground */,
 				C7FAF0C822871AFB0038253C /* TechnicalTest1.playground */,
 				C75128CB2287513F00735980 /* SourceFiles */,
