@@ -49,3 +49,6 @@ enum BurgerFactoryType: BurgerMaking {
         }
     }
 }
+
+let jackInTheBox = BurgerFactoryType.jackInTheBox.make()
+print(jackInTheBox.ingredients)
