@@ -85,6 +85,7 @@
 		C7874E02228701440088144B /* Favourable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73596572286D8B9004FDFD4 /* Favourable.swift */; };
 		C7874E03228702130088144B /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73596562286D8B9004FDFD4 /* Demo.swift */; };
 		C7874E04228702130088144B /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73596562286D8B9004FDFD4 /* Demo.swift */; };
+		C7B06BFF228C260D00014B0A /* DemoProjectAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B06BFE228C260D00014B0A /* DemoProjectAlgorithmTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,6 +227,7 @@
 		C73596B22286DAF3004FDFD4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		C73596B32286DAF3004FDFD4 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		C73596B42286DAF3004FDFD4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		C73814B6228C389800E92F00 /* Technicaltest4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Technicaltest4.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C75128AC22874D8B00735980 /* Playgrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Playgrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75128AE22874D8C00735980 /* Playgrounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Playgrounds.h; sourceTree = "<group>"; };
 		C75128AF22874D8C00735980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -235,6 +237,9 @@
 		C75128CE22875FA000735980 /* BuilderDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BuilderDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C75128CF2287689700735980 /* TemplateMethodDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TemplateMethodDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7874DFF228700260088144B /* DependencyInjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionTests.swift; sourceTree = "<group>"; };
+		C7B06BFC228BE67E00014B0A /* TechnicalTest2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TechnicalTest2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7B06BFD228C0C6400014B0A /* TechnicalTest3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TechnicalTest3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7B06BFE228C260D00014B0A /* DemoProjectAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProjectAlgorithmTests.swift; sourceTree = "<group>"; };
 		C7D242822286E2F100A5964B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C7FAF0C5228719710038253C /* FactoryMethodDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FactoryMethodDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7FAF0C6228719E70038253C /* ValueAndReferenceTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ValueAndReferenceTypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -473,6 +478,7 @@
 				C73596AD2286D992004FDFD4 /* AreaListViewModelTests.swift */,
 				C73596AC2286D992004FDFD4 /* DemoProjectMoviesTests.swift */,
 				C73596082286D7A1004FDFD4 /* DemoProjectTests.swift */,
+				C7B06BFE228C260D00014B0A /* DemoProjectAlgorithmTests.swift */,
 				C735960A2286D7A1004FDFD4 /* Info.plist */,
 			);
 			path = DemoProjectTests;
@@ -788,6 +794,10 @@
 		C75128AD22874D8C00735980 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				C73814B6228C389800E92F00 /* Technicaltest4.playground */,
+				C7B06BFD228C0C6400014B0A /* TechnicalTest3.playground */,
+				C7B06BFC228BE67E00014B0A /* TechnicalTest2.playground */,
+				C7FAF0C822871AFB0038253C /* TechnicalTest1.playground */,
 				C7229E0D22877366009980E6 /* SingleResponsabilityPrinciple.playground */,
 				C7229E0E2287785F009980E6 /* OpenClosedPrinciple.playground */,
 				C7229E0F22880F97009980E6 /* LiskovSubstitutionPrinciple.playground */,
@@ -817,7 +827,6 @@
 				C7229E53228A0EE1009980E6 /* StateDesignPattern.playground */,
 				C7229E54228A0F07009980E6 /* VisitorDesignPattern.playground */,
 				C7FAF0C6228719E70038253C /* ValueAndReferenceTypes.playground */,
-				C7FAF0C822871AFB0038253C /* TechnicalTest1.playground */,
 				C75128CB2287513F00735980 /* SourceFiles */,
 				C75128AE22874D8C00735980 /* Playgrounds.h */,
 				C75128AF22874D8C00735980 /* Info.plist */,
@@ -1087,6 +1096,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B06BFF228C260D00014B0A /* DemoProjectAlgorithmTests.swift in Sources */,
 				C73596AF2286D992004FDFD4 /* DemoProjectMoviesTests.swift in Sources */,
 				C73596AE2286D992004FDFD4 /* AreaCellDataModelTests.swift in Sources */,
 				C7874E01228701430088144B /* Favourable.swift in Sources */,

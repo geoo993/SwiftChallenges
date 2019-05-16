@@ -1,10 +1,24 @@
-import UIKit
-
-//var str = "Hello, playground"
+/*
+ var array = (0..<100).compactMap({ $0 })
+ 
+ let index = Int(arc4random_uniform(UInt32(array.count - 1)))
+ let chunk = 5
+ let val = stride(from: 0, to: array.count, by: chunk).map {
+ Array(array[$0..<Swift.min($0 + chunk, array.count)])
+ }
+ 
+ var counter = 0
+ for index in 0..<val.count {
+ defer { counter += 1 }
+ print(index)
+ }
+ print(val)
+ print("counter \(counter)")
+ */
 
 /*
  
- hat, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
+ That, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
  
  For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
  
@@ -46,49 +60,3 @@ public func getSmallest(_ array : [Int]) -> Int? {
 
 var arr = [1, 2, 3]//[-1, -3]// [1, 3, 6, 4, 1, 2]
 solution(&arr)
-
-
-// you can write to stderr for debugging purposes, e.g.
-// fputs("this is a debug message\n", stderr)
-//
-//public func solution(_ N : Int) {
-//    // write your code in Swift 4.2.1 (Linux)
-//    let isPositive = (N % 2 == 0)
-//    if isPositive == false {
-//        print("Please enter a positive number")
-//        return
-//    }
-//    for index in 1..<N {
-//        let divisibleCount = divisibleCounter(index: index)
-//        switch divisibleCount {
-//        case 0:
-//            print(index)
-//        case 1:
-//            print("Codility")
-//        case 2:
-//            print("CodilityTest")
-//        case 3:
-//            print("CodilityTestCoders")
-//        default:
-//            print("")
-//        }
-//    }
-//}
-//
-//func divisibleCounter(index: Int) -> Int {
-//    let dividers = [2, 3, 5]
-//    return dividers
-//        .map({ index.isMultipleNumber(of: $0) ? true : false })
-//        .filter({ $0 == true }).count
-//}
-//
-//extension Int {
-//    func isMultipleNumber(of number: Int) -> Bool {
-//        return self % number == 0
-//    }
-//}
-////let number = 2003
-//
-////number.isMultipleNumber(of: 5)
-////number.isMultiple(of: 5)
-//solution(24)
