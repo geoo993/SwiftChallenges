@@ -47,10 +47,10 @@ class PlaceView: UIView {
         distanceLabel.text = viewModel.distance
         placeImageView.kf.indicatorType = IndicatorType.activity
         placeImageView.kf.setImage(with: URL(string: viewModel.placeImageUrl),
-                                   placeholder: UIImage(named : "PlacesPlaceholder"),
-                                   options: nil,
-                                   progressBlock: nil)
-        { (result: Result<RetrieveImageResult, KingfisherError>) in
+                              placeholder: UIImage(named : "PlacesPlaceholder"),
+                              options: nil,
+                              progressBlock: nil)
+        { result in
         }
     }
     
