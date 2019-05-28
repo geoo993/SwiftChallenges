@@ -119,6 +119,13 @@
             ReferencedContainer = "container:DemoProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "DYLD_PRINT_STATISTICS"
+            value = "YES"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
          <AdditionalOption
             key = "MallocStackLogging"
@@ -128,6 +135,11 @@
          <AdditionalOption
             key = "PrefersMallocStackLoggingLite"
             value = ""
+            isEnabled = "YES">
+         </AdditionalOption>
+         <AdditionalOption
+            key = "NSZombieEnabled"
+            value = "YES"
             isEnabled = "YES">
          </AdditionalOption>
       </AdditionalOptions>

@@ -76,6 +76,23 @@
 		C73596B02286D992004FDFD4 /* AreaListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73596AD2286D992004FDFD4 /* AreaListViewModelTests.swift */; };
 		C73596B72286DAF3004FDFD4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73596B32286DAF3004FDFD4 /* Kingfisher.framework */; };
 		C73596B82286DAF3004FDFD4 /* Kingfisher.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C73596B32286DAF3004FDFD4 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C74FEB9F229D15930052FE2B /* OleoScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C74FEB9D229D15920052FE2B /* OleoScript-Regular.ttf */; };
+		C74FEBA0229D15930052FE2B /* OleoScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C74FEB9E229D15930052FE2B /* OleoScript-Bold.ttf */; };
+		C74FEBAF229D33110052FE2B /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBAB229D33110052FE2B /* Utilities.m */; };
+		C74FEBB0229D33110052FE2B /* WindowWithStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBAE229D33110052FE2B /* WindowWithStatusBar.swift */; };
+		C74FEBB2229D33F10052FE2B /* CatFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBB1229D33F00052FE2B /* CatFeedViewController.swift */; };
+		C74FEBBD229D33F90052FE2B /* PhotoFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBB3229D33F90052FE2B /* PhotoFeedModel.swift */; };
+		C74FEBBE229D33F90052FE2B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBB4229D33F90052FE2B /* LocationModel.swift */; };
+		C74FEBBF229D33F90052FE2B /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBB5229D33F90052FE2B /* PhotoModel.swift */; };
+		C74FEBC0229D33F90052FE2B /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBB6229D33F90052FE2B /* CommentModel.swift */; };
+		C74FEBC1229D33F90052FE2B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBB7229D33F90052FE2B /* UserModel.swift */; };
+		C74FEBC2229D33F90052FE2B /* ImageURLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBB8229D33F90052FE2B /* ImageURLModel.swift */; };
+		C74FEBC3229D33F90052FE2B /* CommentFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBB9229D33F90052FE2B /* CommentFeedModel.swift */; };
+		C74FEBC4229D33F90052FE2B /* CATCellConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBBA229D33F90052FE2B /* CATCellConfig.m */; };
+		C74FEBC5229D33F90052FE2B /* CellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBBB229D33F90052FE2B /* CellConfig.swift */; };
+		C74FEBC9229D34010052FE2B /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBC6229D34010052FE2B /* CommentView.swift */; };
+		C74FEBCA229D34010052FE2B /* CatPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBC7229D34010052FE2B /* CatPhotoTableViewCell.swift */; };
+		C74FEBCB229D34010052FE2B /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FEBC8229D34010052FE2B /* AsyncImageView.swift */; };
 		C75128BE22874D8C00735980 /* Playgrounds.h in Headers */ = {isa = PBXBuildFile; fileRef = C75128AE22874D8C00735980 /* Playgrounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C75128C122874D8C00735980 /* Playgrounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75128AC22874D8B00735980 /* Playgrounds.framework */; };
 		C75128C222874D8C00735980 /* Playgrounds.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C75128AC22874D8B00735980 /* Playgrounds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -236,6 +253,26 @@
 		C73596B32286DAF3004FDFD4 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		C73596B42286DAF3004FDFD4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		C73814B6228C389800E92F00 /* Technicaltest4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Technicaltest4.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C74FEB9D229D15920052FE2B /* OleoScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OleoScript-Regular.ttf"; sourceTree = "<group>"; };
+		C74FEB9E229D15930052FE2B /* OleoScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OleoScript-Bold.ttf"; sourceTree = "<group>"; };
+		C74FEBAA229D33100052FE2B /* DemoProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		C74FEBAB229D33110052FE2B /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		C74FEBAC229D33110052FE2B /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		C74FEBAE229D33110052FE2B /* WindowWithStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowWithStatusBar.swift; sourceTree = "<group>"; };
+		C74FEBB1229D33F00052FE2B /* CatFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatFeedViewController.swift; sourceTree = "<group>"; };
+		C74FEBB3229D33F90052FE2B /* PhotoFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFeedModel.swift; sourceTree = "<group>"; };
+		C74FEBB4229D33F90052FE2B /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		C74FEBB5229D33F90052FE2B /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		C74FEBB6229D33F90052FE2B /* CommentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		C74FEBB7229D33F90052FE2B /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C74FEBB8229D33F90052FE2B /* ImageURLModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageURLModel.swift; sourceTree = "<group>"; };
+		C74FEBB9229D33F90052FE2B /* CommentFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFeedModel.swift; sourceTree = "<group>"; };
+		C74FEBBA229D33F90052FE2B /* CATCellConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATCellConfig.m; sourceTree = "<group>"; };
+		C74FEBBB229D33F90052FE2B /* CellConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfig.swift; sourceTree = "<group>"; };
+		C74FEBBC229D33F90052FE2B /* CATCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATCellConfig.h; sourceTree = "<group>"; };
+		C74FEBC6229D34010052FE2B /* CommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		C74FEBC7229D34010052FE2B /* CatPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		C74FEBC8229D34010052FE2B /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		C75128AC22874D8B00735980 /* Playgrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Playgrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75128AE22874D8C00735980 /* Playgrounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Playgrounds.h; sourceTree = "<group>"; };
 		C75128AF22874D8C00735980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -469,6 +506,7 @@
 		C73595F22286D79D004FDFD4 /* DemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				C74FEBA6229D325B0052FE2B /* Catstagram */,
 				C7BAFCD6229BCEE300B3512E /* FlickrPhotosApp */,
 				C7296E912286FF2A00E99627 /* PlacesApp */,
 				C7296E8D2286FC5100E99627 /* RetainCycleColorApp */,
@@ -482,6 +520,7 @@
 				C735965A2286D8BA004FDFD4 /* Manager */,
 				C73596582286D8B9004FDFD4 /* Map */,
 				C735965D2286D8BA004FDFD4 /* Resources */,
+				C74FEB9C229D15620052FE2B /* Fonts */,
 				C73596212286D80B004FDFD4 /* SupportingFiles */,
 				C73596742286D8BA004FDFD4 /* WebService */,
 			);
@@ -514,10 +553,14 @@
 		C73596212286D80B004FDFD4 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				C74FEBAC229D33110052FE2B /* Utilities.h */,
+				C74FEBAB229D33110052FE2B /* Utilities.m */,
+				C74FEBAE229D33110052FE2B /* WindowWithStatusBar.swift */,
 				C73595F72286D79D004FDFD4 /* Main.storyboard */,
 				C73595FA2286D7A0004FDFD4 /* Assets.xcassets */,
 				C73595FC2286D7A0004FDFD4 /* LaunchScreen.storyboard */,
 				C73595FF2286D7A0004FDFD4 /* Info.plist */,
+				C74FEBAA229D33100052FE2B /* DemoProject-Bridging-Header.h */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -810,6 +853,60 @@
 			path = WebService;
 			sourceTree = "<group>";
 		};
+		C74FEB9C229D15620052FE2B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C74FEB9E229D15930052FE2B /* OleoScript-Bold.ttf */,
+				C74FEB9D229D15920052FE2B /* OleoScript-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C74FEBA6229D325B0052FE2B /* Catstagram */ = {
+			isa = PBXGroup;
+			children = (
+				C74FEBA9229D32900052FE2B /* Controller */,
+				C74FEBA8229D328A0052FE2B /* Model */,
+				C74FEBA7229D32800052FE2B /* View */,
+			);
+			path = Catstagram;
+			sourceTree = "<group>";
+		};
+		C74FEBA7229D32800052FE2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C74FEBC8229D34010052FE2B /* AsyncImageView.swift */,
+				C74FEBC7229D34010052FE2B /* CatPhotoTableViewCell.swift */,
+				C74FEBC6229D34010052FE2B /* CommentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C74FEBA8229D328A0052FE2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C74FEBBC229D33F90052FE2B /* CATCellConfig.h */,
+				C74FEBBA229D33F90052FE2B /* CATCellConfig.m */,
+				C74FEBBB229D33F90052FE2B /* CellConfig.swift */,
+				C74FEBB9229D33F90052FE2B /* CommentFeedModel.swift */,
+				C74FEBB6229D33F90052FE2B /* CommentModel.swift */,
+				C74FEBB8229D33F90052FE2B /* ImageURLModel.swift */,
+				C74FEBB4229D33F90052FE2B /* LocationModel.swift */,
+				C74FEBB3229D33F90052FE2B /* PhotoFeedModel.swift */,
+				C74FEBB5229D33F90052FE2B /* PhotoModel.swift */,
+				C74FEBB7229D33F90052FE2B /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C74FEBA9229D32900052FE2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C74FEBB1229D33F00052FE2B /* CatFeedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C75128AD22874D8C00735980 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -1024,6 +1121,7 @@
 				TargetAttributes = {
 					C73595EF2286D79D004FDFD4 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					C73596032286D7A1004FDFD4 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -1069,7 +1167,9 @@
 				C735967D2286D8BA004FDFD4 /* ImageAndLabelCollectionCell.xib in Resources */,
 				C735967F2286D8BA004FDFD4 /* CollectionTableCell.xib in Resources */,
 				C735967A2286D8BA004FDFD4 /* PaginationCell.xib in Resources */,
+				C74FEB9F229D15930052FE2B /* OleoScript-Regular.ttf in Resources */,
 				C7296E7A2286F8EE00E99627 /* albums.json in Resources */,
+				C74FEBA0229D15930052FE2B /* OleoScript-Bold.ttf in Resources */,
 				C735969B2286D8BA004FDFD4 /* PlacesList.json in Resources */,
 				C73596982286D8BA004FDFD4 /* SonyWorld.gpx in Resources */,
 				C73595FB2286D7A0004FDFD4 /* Assets.xcassets in Resources */,
@@ -1106,10 +1206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74FEBAF229D33110052FE2B /* Utilities.m in Sources */,
 				C73596922286D8BA004FDFD4 /* Place.swift in Sources */,
 				C73596A82286D8BA004FDFD4 /* WebServiceManager.swift in Sources */,
 				C73596A22286D8BA004FDFD4 /* MovieDetailVM.swift in Sources */,
 				C735967E2286D8BA004FDFD4 /* PlaceView.swift in Sources */,
+				C74FEBB2229D33F10052FE2B /* CatFeedViewController.swift in Sources */,
 				C735969A2286D8BA004FDFD4 /* LocationManager.swift in Sources */,
 				C7BAFCE6229BD11500B3512E /* FlickrPhotosViewController.swift in Sources */,
 				C735968D2286D8BA004FDFD4 /* AppConstants.swift in Sources */,
@@ -1119,9 +1221,12 @@
 				C73596892286D8BA004FDFD4 /* AreaListController.swift in Sources */,
 				C73596A92286D8BA004FDFD4 /* PlaceWebService.swift in Sources */,
 				C735968B2286D8BA004FDFD4 /* AppData.swift in Sources */,
+				C74FEBC3229D33F90052FE2B /* CommentFeedModel.swift in Sources */,
 				C73596812286D8BA004FDFD4 /* MovieDetailController.swift in Sources */,
 				C7296E822286F9AA00E99627 /* NotificationExtension.swift in Sources */,
 				C73596A02286D8BA004FDFD4 /* ImageAndLabelCollectionCellVM.swift in Sources */,
+				C74FEBC1229D33F90052FE2B /* UserModel.swift in Sources */,
+				C74FEBBF229D33F90052FE2B /* PhotoModel.swift in Sources */,
 				C73596822286D8BA004FDFD4 /* BlueViewController.swift in Sources */,
 				C73596992286D8BA004FDFD4 /* AlertManager.swift in Sources */,
 				C73596792286D8BA004FDFD4 /* CollectionTableCell.swift in Sources */,
@@ -1129,8 +1234,11 @@
 				C73596A72286D8BA004FDFD4 /* PlaceListVM.swift in Sources */,
 				C7BAFCE9229BD15E00B3512E /* Result.swift in Sources */,
 				C73596902286D8BA004FDFD4 /* UITableView+Additions.swift in Sources */,
+				C74FEBC2229D33F90052FE2B /* ImageURLModel.swift in Sources */,
 				C73596912286D8BA004FDFD4 /* UICollectionView+Additions.swift in Sources */,
+				C74FEBCA229D34010052FE2B /* CatPhotoTableViewCell.swift in Sources */,
 				C73596952286D8BA004FDFD4 /* Area.swift in Sources */,
+				C74FEBBD229D33F90052FE2B /* PhotoFeedModel.swift in Sources */,
 				C735968C2286D8BA004FDFD4 /* Helper.swift in Sources */,
 				C735969F2286D8BA004FDFD4 /* PaginationCellVM.swift in Sources */,
 				C7296E7F2286F98B00E99627 /* LibraryAPI.swift in Sources */,
@@ -1139,6 +1247,7 @@
 				C73596932286D8BA004FDFD4 /* Movie.swift in Sources */,
 				C73596942286D8BA004FDFD4 /* AreaCellDataModel.swift in Sources */,
 				C735968A2286D8BA004FDFD4 /* AreaTableCell.swift in Sources */,
+				C74FEBC4229D33F90052FE2B /* CATCellConfig.m in Sources */,
 				C73596972286D8BA004FDFD4 /* Favourable.swift in Sources */,
 				C7BAFCE7229BD11500B3512E /* SearchResultsViewController.swift in Sources */,
 				C735969E2286D8BA004FDFD4 /* PlaceViewVM.swift in Sources */,
@@ -1151,8 +1260,12 @@
 				C735968F2286D8BA004FDFD4 /* DataFetcher.swift in Sources */,
 				C73596A12286D8BA004FDFD4 /* PlacesTableCollectionCellVM.swift in Sources */,
 				C735967C2286D8BA004FDFD4 /* ImageAndLabelCollectionCell.swift in Sources */,
+				C74FEBC0229D33F90052FE2B /* CommentModel.swift in Sources */,
+				C74FEBBE229D33F90052FE2B /* LocationModel.swift in Sources */,
 				C7BAFCE1229BD10D00B3512E /* Cache.swift in Sources */,
+				C74FEBB0229D33110052FE2B /* WindowWithStatusBar.swift in Sources */,
 				C7BAFCE5229BD11500B3512E /* SearchResultsCollectionViewCell.swift in Sources */,
+				C74FEBCB229D34010052FE2B /* AsyncImageView.swift in Sources */,
 				C73596842286D8BA004FDFD4 /* PlaceDetailController.swift in Sources */,
 				C73596782286D8BA004FDFD4 /* HomeViewController.swift in Sources */,
 				C735969D2286D8BA004FDFD4 /* CategoriesTableCollectionCellVM.swift in Sources */,
@@ -1161,7 +1274,9 @@
 				C7296E7C2286F92400E99627 /* HorizontalScrollerView.swift in Sources */,
 				C73596A52286D8BA004FDFD4 /* AlbumView.swift in Sources */,
 				C73596A62286D8BA004FDFD4 /* AreaListViewModel.swift in Sources */,
+				C74FEBC5229D33F90052FE2B /* CellConfig.swift in Sources */,
 				C7BAFCDF229BD10D00B3512E /* FlickrPhoto.swift in Sources */,
+				C74FEBC9229D34010052FE2B /* CommentView.swift in Sources */,
 				C73596852286D8BA004FDFD4 /* PopMusicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1360,6 +1475,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q93294747;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1374,6 +1490,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.DemoProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoProject/SupportingFiles/DemoProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1384,6 +1502,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q93294747;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1398,6 +1517,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.DemoProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoProject/SupportingFiles/DemoProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

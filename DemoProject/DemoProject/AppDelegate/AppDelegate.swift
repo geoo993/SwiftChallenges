@@ -12,20 +12,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var lastTime: CFTimeInterval = 0.0
+    private let rootVC = CatFeedViewController()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         //window?.rootViewController = UINavigationController(rootViewController: BlueViewController())
         //LocationManager.sharedManager.initializeLocationManager()
         
+        
+        loadCatstagram()
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        
+        // For Catstagram
+        rootVC.sendLogs()
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -52,6 +58,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
         return true
+    }
+    
+    //// FOR CATSTAGRAM
+    func loadCatstagram() {
+        window = WindowWithStatusBar(frame: UIScreen.main.bounds)
+        let rootNavController = UINavigationController(rootViewController: rootVC)
+        
+        let font = UIFont(name: "OleoScript-Regular", size: 20.0)!
+        rootNavController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: font]
+        rootNavController.navigationBar.barTintColor = UIColor.white
+        rootNavController.navigationBar.isOpaque = true
+        rootNavController.navigationItem.titleView?.isOpaque = true
+        rootNavController.navigationBar.isTranslucent = false
+        window?.rootViewController = rootNavController
+        window?.makeKeyAndVisible()
+        
+        ///*
+         let link = CADisplayLink(target: self, selector: #selector(AppDelegate.update(link:)))
+         link.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
+         //*/
+    }
+
+    @objc func update(link: CADisplayLink) {
+        //1
+        if lastTime == 0.0 {
+            lastTime = link.timestamp
+        }
+        
+        //2
+        let currentTime = link.timestamp
+        let elapsedTime = floor((currentTime - lastTime) * 10_000)/10;
+        
+        //3
+        if elapsedTime > 16.7 {
+            print("Frame was dropped with elapsed time of \(elapsedTime) at \(currentTime)")
+        }
+        lastTime = link.timestamp
     }
     
 }
