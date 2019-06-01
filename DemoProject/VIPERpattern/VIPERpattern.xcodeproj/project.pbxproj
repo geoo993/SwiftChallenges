@@ -1,0 +1,1359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7AAD0D222A2B9D30025C021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AAD0D122A2B9D30025C021 /* AppDelegate.swift */; };
+		C7AAD0D422A2B9D30025C021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AAD0D322A2B9D30025C021 /* ViewController.swift */; };
+		C7AAD0D722A2B9D30025C021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AAD0D522A2B9D30025C021 /* Main.storyboard */; };
+		C7AAD0D922A2B9D40025C021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AAD0D822A2B9D40025C021 /* Assets.xcassets */; };
+		C7AAD0DC22A2B9D40025C021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AAD0DA22A2B9D40025C021 /* LaunchScreen.storyboard */; };
+		C7AAD0E722A2B9D40025C021 /* VIPERpatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AAD0E622A2B9D40025C021 /* VIPERpatternTests.swift */; };
+		C7AAD0FB22A2BA0D0025C021 /* Entity.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AAD0F922A2BA0D0025C021 /* Entity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7AAD0FE22A2BA0D0025C021 /* Entity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD0F722A2BA0D0025C021 /* Entity.framework */; };
+		C7AAD0FF22A2BA0D0025C021 /* Entity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD0F722A2BA0D0025C021 /* Entity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7AAD10D22A2BA1A0025C021 /* Interactor.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AAD10B22A2BA1A0025C021 /* Interactor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7AAD11022A2BA1A0025C021 /* Interactor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD10922A2BA1A0025C021 /* Interactor.framework */; };
+		C7AAD11122A2BA1A0025C021 /* Interactor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD10922A2BA1A0025C021 /* Interactor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7AAD11E22A2BA230025C021 /* Services.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AAD11C22A2BA230025C021 /* Services.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7AAD12122A2BA230025C021 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD11A22A2BA230025C021 /* Services.framework */; };
+		C7AAD12222A2BA230025C021 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD11A22A2BA230025C021 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7AAD12F22A2BA320025C021 /* Presenter.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AAD12D22A2BA320025C021 /* Presenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7AAD13222A2BA320025C021 /* Presenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD12B22A2BA310025C021 /* Presenter.framework */; };
+		C7AAD13322A2BA320025C021 /* Presenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD12B22A2BA310025C021 /* Presenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7AAD14022A2BA3F0025C021 /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AAD13E22A2BA3F0025C021 /* Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7AAD14322A2BA3F0025C021 /* Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD13C22A2BA3F0025C021 /* Router.framework */; };
+		C7AAD14422A2BA3F0025C021 /* Router.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD13C22A2BA3F0025C021 /* Router.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7AAD15122A2BA480025C021 /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AAD14F22A2BA480025C021 /* View.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7AAD15422A2BA480025C021 /* View.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD14D22A2BA480025C021 /* View.framework */; };
+		C7AAD15522A2BA480025C021 /* View.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7AAD14D22A2BA480025C021 /* View.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7AAD0E322A2B9D40025C021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7AAD0C622A2B9D30025C021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7AAD0CD22A2B9D30025C021;
+			remoteInfo = VIPERpattern;
+		};
+		C7AAD0FC22A2BA0D0025C021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7AAD0C622A2B9D30025C021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7AAD0F622A2BA0D0025C021;
+			remoteInfo = Entity;
+		};
+		C7AAD10E22A2BA1A0025C021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7AAD0C622A2B9D30025C021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7AAD10822A2BA1A0025C021;
+			remoteInfo = Interactor;
+		};
+		C7AAD11F22A2BA230025C021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7AAD0C622A2B9D30025C021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7AAD11922A2BA230025C021;
+			remoteInfo = Services;
+		};
+		C7AAD13022A2BA320025C021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7AAD0C622A2B9D30025C021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7AAD12A22A2BA310025C021;
+			remoteInfo = Presenter;
+		};
+		C7AAD14122A2BA3F0025C021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7AAD0C622A2B9D30025C021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7AAD13B22A2BA3F0025C021;
+			remoteInfo = Router;
+		};
+		C7AAD15222A2BA480025C021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7AAD0C622A2B9D30025C021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7AAD14C22A2BA480025C021;
+			remoteInfo = View;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7AAD10322A2BA0D0025C021 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C7AAD0FF22A2BA0D0025C021 /* Entity.framework in Embed Frameworks */,
+				C7AAD15522A2BA480025C021 /* View.framework in Embed Frameworks */,
+				C7AAD12222A2BA230025C021 /* Services.framework in Embed Frameworks */,
+				C7AAD11122A2BA1A0025C021 /* Interactor.framework in Embed Frameworks */,
+				C7AAD13322A2BA320025C021 /* Presenter.framework in Embed Frameworks */,
+				C7AAD14422A2BA3F0025C021 /* Router.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C7AAD0CE22A2B9D30025C021 /* VIPERpattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERpattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7AAD0D122A2B9D30025C021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7AAD0D322A2B9D30025C021 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7AAD0D622A2B9D30025C021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7AAD0D822A2B9D40025C021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7AAD0DB22A2B9D40025C021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7AAD0DD22A2B9D40025C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AAD0E222A2B9D40025C021 /* VIPERpatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERpatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7AAD0E622A2B9D40025C021 /* VIPERpatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERpatternTests.swift; sourceTree = "<group>"; };
+		C7AAD0E822A2B9D40025C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AAD0F722A2BA0D0025C021 /* Entity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Entity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7AAD0F922A2BA0D0025C021 /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		C7AAD0FA22A2BA0D0025C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AAD10922A2BA1A0025C021 /* Interactor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Interactor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7AAD10B22A2BA1A0025C021 /* Interactor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interactor.h; sourceTree = "<group>"; };
+		C7AAD10C22A2BA1A0025C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AAD11A22A2BA230025C021 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7AAD11C22A2BA230025C021 /* Services.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
+		C7AAD11D22A2BA230025C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AAD12B22A2BA310025C021 /* Presenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7AAD12D22A2BA320025C021 /* Presenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		C7AAD12E22A2BA320025C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AAD13C22A2BA3F0025C021 /* Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7AAD13E22A2BA3F0025C021 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		C7AAD13F22A2BA3F0025C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AAD14D22A2BA480025C021 /* View.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = View.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7AAD14F22A2BA480025C021 /* View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		C7AAD15022A2BA480025C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7AAD0CB22A2B9D30025C021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD0FE22A2BA0D0025C021 /* Entity.framework in Frameworks */,
+				C7AAD15422A2BA480025C021 /* View.framework in Frameworks */,
+				C7AAD12122A2BA230025C021 /* Services.framework in Frameworks */,
+				C7AAD11022A2BA1A0025C021 /* Interactor.framework in Frameworks */,
+				C7AAD13222A2BA320025C021 /* Presenter.framework in Frameworks */,
+				C7AAD14322A2BA3F0025C021 /* Router.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD0DF22A2B9D40025C021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD0F422A2BA0D0025C021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD10622A2BA1A0025C021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD11722A2BA230025C021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD12822A2BA310025C021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD13922A2BA3F0025C021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD14A22A2BA480025C021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7AAD0C522A2B9D30025C021 = {
+			isa = PBXGroup;
+			children = (
+				C7AAD0D022A2B9D30025C021 /* VIPERpattern */,
+				C7AAD0E522A2B9D40025C021 /* VIPERpatternTests */,
+				C7AAD0F822A2BA0D0025C021 /* Entity */,
+				C7AAD10A22A2BA1A0025C021 /* Interactor */,
+				C7AAD11B22A2BA230025C021 /* Services */,
+				C7AAD12C22A2BA320025C021 /* Presenter */,
+				C7AAD13D22A2BA3F0025C021 /* Router */,
+				C7AAD14E22A2BA480025C021 /* View */,
+				C7AAD0CF22A2B9D30025C021 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7AAD0CF22A2B9D30025C021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAD0CE22A2B9D30025C021 /* VIPERpattern.app */,
+				C7AAD0E222A2B9D40025C021 /* VIPERpatternTests.xctest */,
+				C7AAD0F722A2BA0D0025C021 /* Entity.framework */,
+				C7AAD10922A2BA1A0025C021 /* Interactor.framework */,
+				C7AAD11A22A2BA230025C021 /* Services.framework */,
+				C7AAD12B22A2BA310025C021 /* Presenter.framework */,
+				C7AAD13C22A2BA3F0025C021 /* Router.framework */,
+				C7AAD14D22A2BA480025C021 /* View.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7AAD0D022A2B9D30025C021 /* VIPERpattern */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAD0D122A2B9D30025C021 /* AppDelegate.swift */,
+				C7AAD0D322A2B9D30025C021 /* ViewController.swift */,
+				C7AAD0D522A2B9D30025C021 /* Main.storyboard */,
+				C7AAD0D822A2B9D40025C021 /* Assets.xcassets */,
+				C7AAD0DA22A2B9D40025C021 /* LaunchScreen.storyboard */,
+				C7AAD0DD22A2B9D40025C021 /* Info.plist */,
+			);
+			path = VIPERpattern;
+			sourceTree = "<group>";
+		};
+		C7AAD0E522A2B9D40025C021 /* VIPERpatternTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAD0E622A2B9D40025C021 /* VIPERpatternTests.swift */,
+				C7AAD0E822A2B9D40025C021 /* Info.plist */,
+			);
+			path = VIPERpatternTests;
+			sourceTree = "<group>";
+		};
+		C7AAD0F822A2BA0D0025C021 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAD0F922A2BA0D0025C021 /* Entity.h */,
+				C7AAD0FA22A2BA0D0025C021 /* Info.plist */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C7AAD10A22A2BA1A0025C021 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAD10B22A2BA1A0025C021 /* Interactor.h */,
+				C7AAD10C22A2BA1A0025C021 /* Info.plist */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C7AAD11B22A2BA230025C021 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAD11C22A2BA230025C021 /* Services.h */,
+				C7AAD11D22A2BA230025C021 /* Info.plist */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C7AAD12C22A2BA320025C021 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAD12D22A2BA320025C021 /* Presenter.h */,
+				C7AAD12E22A2BA320025C021 /* Info.plist */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C7AAD13D22A2BA3F0025C021 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAD13E22A2BA3F0025C021 /* Router.h */,
+				C7AAD13F22A2BA3F0025C021 /* Info.plist */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C7AAD14E22A2BA480025C021 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAD14F22A2BA480025C021 /* View.h */,
+				C7AAD15022A2BA480025C021 /* Info.plist */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C7AAD0F222A2BA0D0025C021 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD0FB22A2BA0D0025C021 /* Entity.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD10422A2BA1A0025C021 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD10D22A2BA1A0025C021 /* Interactor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD11522A2BA230025C021 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD11E22A2BA230025C021 /* Services.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD12622A2BA310025C021 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD12F22A2BA320025C021 /* Presenter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD13722A2BA3F0025C021 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD14022A2BA3F0025C021 /* Router.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD14822A2BA480025C021 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD15122A2BA480025C021 /* View.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C7AAD0CD22A2B9D30025C021 /* VIPERpattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7AAD0EB22A2B9D40025C021 /* Build configuration list for PBXNativeTarget "VIPERpattern" */;
+			buildPhases = (
+				C7AAD0CA22A2B9D30025C021 /* Sources */,
+				C7AAD0CB22A2B9D30025C021 /* Frameworks */,
+				C7AAD0CC22A2B9D30025C021 /* Resources */,
+				C7AAD10322A2BA0D0025C021 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7AAD0FD22A2BA0D0025C021 /* PBXTargetDependency */,
+				C7AAD10F22A2BA1A0025C021 /* PBXTargetDependency */,
+				C7AAD12022A2BA230025C021 /* PBXTargetDependency */,
+				C7AAD13122A2BA320025C021 /* PBXTargetDependency */,
+				C7AAD14222A2BA3F0025C021 /* PBXTargetDependency */,
+				C7AAD15322A2BA480025C021 /* PBXTargetDependency */,
+			);
+			name = VIPERpattern;
+			productName = VIPERpattern;
+			productReference = C7AAD0CE22A2B9D30025C021 /* VIPERpattern.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7AAD0E122A2B9D40025C021 /* VIPERpatternTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7AAD0EE22A2B9D40025C021 /* Build configuration list for PBXNativeTarget "VIPERpatternTests" */;
+			buildPhases = (
+				C7AAD0DE22A2B9D40025C021 /* Sources */,
+				C7AAD0DF22A2B9D40025C021 /* Frameworks */,
+				C7AAD0E022A2B9D40025C021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7AAD0E422A2B9D40025C021 /* PBXTargetDependency */,
+			);
+			name = VIPERpatternTests;
+			productName = VIPERpatternTests;
+			productReference = C7AAD0E222A2B9D40025C021 /* VIPERpatternTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7AAD0F622A2BA0D0025C021 /* Entity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7AAD10022A2BA0D0025C021 /* Build configuration list for PBXNativeTarget "Entity" */;
+			buildPhases = (
+				C7AAD0F222A2BA0D0025C021 /* Headers */,
+				C7AAD0F322A2BA0D0025C021 /* Sources */,
+				C7AAD0F422A2BA0D0025C021 /* Frameworks */,
+				C7AAD0F522A2BA0D0025C021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Entity;
+			productName = Entity;
+			productReference = C7AAD0F722A2BA0D0025C021 /* Entity.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7AAD10822A2BA1A0025C021 /* Interactor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7AAD11222A2BA1A0025C021 /* Build configuration list for PBXNativeTarget "Interactor" */;
+			buildPhases = (
+				C7AAD10422A2BA1A0025C021 /* Headers */,
+				C7AAD10522A2BA1A0025C021 /* Sources */,
+				C7AAD10622A2BA1A0025C021 /* Frameworks */,
+				C7AAD10722A2BA1A0025C021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Interactor;
+			productName = Interactor;
+			productReference = C7AAD10922A2BA1A0025C021 /* Interactor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7AAD11922A2BA230025C021 /* Services */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7AAD12322A2BA230025C021 /* Build configuration list for PBXNativeTarget "Services" */;
+			buildPhases = (
+				C7AAD11522A2BA230025C021 /* Headers */,
+				C7AAD11622A2BA230025C021 /* Sources */,
+				C7AAD11722A2BA230025C021 /* Frameworks */,
+				C7AAD11822A2BA230025C021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Services;
+			productName = Services;
+			productReference = C7AAD11A22A2BA230025C021 /* Services.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7AAD12A22A2BA310025C021 /* Presenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7AAD13422A2BA320025C021 /* Build configuration list for PBXNativeTarget "Presenter" */;
+			buildPhases = (
+				C7AAD12622A2BA310025C021 /* Headers */,
+				C7AAD12722A2BA310025C021 /* Sources */,
+				C7AAD12822A2BA310025C021 /* Frameworks */,
+				C7AAD12922A2BA310025C021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Presenter;
+			productName = Presenter;
+			productReference = C7AAD12B22A2BA310025C021 /* Presenter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7AAD13B22A2BA3F0025C021 /* Router */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7AAD14522A2BA3F0025C021 /* Build configuration list for PBXNativeTarget "Router" */;
+			buildPhases = (
+				C7AAD13722A2BA3F0025C021 /* Headers */,
+				C7AAD13822A2BA3F0025C021 /* Sources */,
+				C7AAD13922A2BA3F0025C021 /* Frameworks */,
+				C7AAD13A22A2BA3F0025C021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Router;
+			productName = Router;
+			productReference = C7AAD13C22A2BA3F0025C021 /* Router.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7AAD14C22A2BA480025C021 /* View */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7AAD15622A2BA480025C021 /* Build configuration list for PBXNativeTarget "View" */;
+			buildPhases = (
+				C7AAD14822A2BA480025C021 /* Headers */,
+				C7AAD14922A2BA480025C021 /* Sources */,
+				C7AAD14A22A2BA480025C021 /* Frameworks */,
+				C7AAD14B22A2BA480025C021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = View;
+			productName = View;
+			productReference = C7AAD14D22A2BA480025C021 /* View.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7AAD0C622A2B9D30025C021 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "GEORGE QUENTIN";
+				TargetAttributes = {
+					C7AAD0CD22A2B9D30025C021 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C7AAD0E122A2B9D40025C021 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C7AAD0CD22A2B9D30025C021;
+					};
+					C7AAD0F622A2BA0D0025C021 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C7AAD10822A2BA1A0025C021 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C7AAD11922A2BA230025C021 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C7AAD12A22A2BA310025C021 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C7AAD13B22A2BA3F0025C021 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C7AAD14C22A2BA480025C021 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C7AAD0C922A2B9D30025C021 /* Build configuration list for PBXProject "VIPERpattern" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7AAD0C522A2B9D30025C021;
+			productRefGroup = C7AAD0CF22A2B9D30025C021 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7AAD0CD22A2B9D30025C021 /* VIPERpattern */,
+				C7AAD0E122A2B9D40025C021 /* VIPERpatternTests */,
+				C7AAD0F622A2BA0D0025C021 /* Entity */,
+				C7AAD10822A2BA1A0025C021 /* Interactor */,
+				C7AAD12A22A2BA310025C021 /* Presenter */,
+				C7AAD13B22A2BA3F0025C021 /* Router */,
+				C7AAD14C22A2BA480025C021 /* View */,
+				C7AAD11922A2BA230025C021 /* Services */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7AAD0CC22A2B9D30025C021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD0DC22A2B9D40025C021 /* LaunchScreen.storyboard in Resources */,
+				C7AAD0D922A2B9D40025C021 /* Assets.xcassets in Resources */,
+				C7AAD0D722A2B9D30025C021 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD0E022A2B9D40025C021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD0F522A2BA0D0025C021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD10722A2BA1A0025C021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD11822A2BA230025C021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD12922A2BA310025C021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD13A22A2BA3F0025C021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD14B22A2BA480025C021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7AAD0CA22A2B9D30025C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD0D422A2B9D30025C021 /* ViewController.swift in Sources */,
+				C7AAD0D222A2B9D30025C021 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD0DE22A2B9D40025C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7AAD0E722A2B9D40025C021 /* VIPERpatternTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD0F322A2BA0D0025C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD10522A2BA1A0025C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD11622A2BA230025C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD12722A2BA310025C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD13822A2BA3F0025C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7AAD14922A2BA480025C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7AAD0E422A2B9D40025C021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7AAD0CD22A2B9D30025C021 /* VIPERpattern */;
+			targetProxy = C7AAD0E322A2B9D40025C021 /* PBXContainerItemProxy */;
+		};
+		C7AAD0FD22A2BA0D0025C021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7AAD0F622A2BA0D0025C021 /* Entity */;
+			targetProxy = C7AAD0FC22A2BA0D0025C021 /* PBXContainerItemProxy */;
+		};
+		C7AAD10F22A2BA1A0025C021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7AAD10822A2BA1A0025C021 /* Interactor */;
+			targetProxy = C7AAD10E22A2BA1A0025C021 /* PBXContainerItemProxy */;
+		};
+		C7AAD12022A2BA230025C021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7AAD11922A2BA230025C021 /* Services */;
+			targetProxy = C7AAD11F22A2BA230025C021 /* PBXContainerItemProxy */;
+		};
+		C7AAD13122A2BA320025C021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7AAD12A22A2BA310025C021 /* Presenter */;
+			targetProxy = C7AAD13022A2BA320025C021 /* PBXContainerItemProxy */;
+		};
+		C7AAD14222A2BA3F0025C021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7AAD13B22A2BA3F0025C021 /* Router */;
+			targetProxy = C7AAD14122A2BA3F0025C021 /* PBXContainerItemProxy */;
+		};
+		C7AAD15322A2BA480025C021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7AAD14C22A2BA480025C021 /* View */;
+			targetProxy = C7AAD15222A2BA480025C021 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7AAD0D522A2B9D30025C021 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7AAD0D622A2B9D30025C021 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7AAD0DA22A2B9D40025C021 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7AAD0DB22A2B9D40025C021 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7AAD0E922A2B9D40025C021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7AAD0EA22A2B9D40025C021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7AAD0EC22A2B9D40025C021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VIPERpattern/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.VIPERpattern";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7AAD0ED22A2B9D40025C021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VIPERpattern/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.VIPERpattern";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C7AAD0EF22A2B9D40025C021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VIPERpatternTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.VIPERpatternTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPERpattern.app/VIPERpattern";
+			};
+			name = Debug;
+		};
+		C7AAD0F022A2B9D40025C021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VIPERpatternTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.VIPERpatternTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPERpattern.app/VIPERpattern";
+			};
+			name = Release;
+		};
+		C7AAD10122A2BA0D0025C021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Entity/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Entity";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7AAD10222A2BA0D0025C021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Entity/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Entity";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7AAD11322A2BA1A0025C021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Interactor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Interactor";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7AAD11422A2BA1A0025C021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Interactor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Interactor";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7AAD12422A2BA230025C021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Services/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Services";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7AAD12522A2BA230025C021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Services/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Services";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7AAD13522A2BA320025C021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Presenter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Presenter";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7AAD13622A2BA320025C021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Presenter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Presenter";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7AAD14622A2BA3F0025C021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Router/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Router";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7AAD14722A2BA3F0025C021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Router/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.Router";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7AAD15722A2BA480025C021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = View/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.View";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7AAD15822A2BA480025C021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = View/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geo-games.View";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7AAD0C922A2B9D30025C021 /* Build configuration list for PBXProject "VIPERpattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7AAD0E922A2B9D40025C021 /* Debug */,
+				C7AAD0EA22A2B9D40025C021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7AAD0EB22A2B9D40025C021 /* Build configuration list for PBXNativeTarget "VIPERpattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7AAD0EC22A2B9D40025C021 /* Debug */,
+				C7AAD0ED22A2B9D40025C021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7AAD0EE22A2B9D40025C021 /* Build configuration list for PBXNativeTarget "VIPERpatternTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7AAD0EF22A2B9D40025C021 /* Debug */,
+				C7AAD0F022A2B9D40025C021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7AAD10022A2BA0D0025C021 /* Build configuration list for PBXNativeTarget "Entity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7AAD10122A2BA0D0025C021 /* Debug */,
+				C7AAD10222A2BA0D0025C021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7AAD11222A2BA1A0025C021 /* Build configuration list for PBXNativeTarget "Interactor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7AAD11322A2BA1A0025C021 /* Debug */,
+				C7AAD11422A2BA1A0025C021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7AAD12322A2BA230025C021 /* Build configuration list for PBXNativeTarget "Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7AAD12422A2BA230025C021 /* Debug */,
+				C7AAD12522A2BA230025C021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7AAD13422A2BA320025C021 /* Build configuration list for PBXNativeTarget "Presenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7AAD13522A2BA320025C021 /* Debug */,
+				C7AAD13622A2BA320025C021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7AAD14522A2BA3F0025C021 /* Build configuration list for PBXNativeTarget "Router" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7AAD14622A2BA3F0025C021 /* Debug */,
+				C7AAD14722A2BA3F0025C021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7AAD15622A2BA480025C021 /* Build configuration list for PBXNativeTarget "View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7AAD15722A2BA480025C021 /* Debug */,
+				C7AAD15822A2BA480025C021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7AAD0C622A2B9D30025C021 /* Project object */;
+}

@@ -1,7 +1,7 @@
 # NOTE: Make sure command-line xcode-select is pointing to the correct compiler:
 # `xcode-select -p` to print the current compiler
 # OR
-# `xcode-select -s
+# `xcode-select -s'
 # carthage bootstrap --no-use-binaries --cache-builds --platform ios
 # or (beware!)
 # carthage update [RepositoryName] --no-use-binaries --cache-builds --platform ios
@@ -20,5 +20,12 @@
 # ==
 #
 github "onevcat/Kingfisher"
+github "robb/Cartography"
 github "Quick/Quick"
 github "Quick/Nimble"
+github "RxSwiftCommunity/RxDataSources"
+github "RxSwiftCommunity/RxGesture"
+github "RxSwiftCommunity/RxSwiftExt"
+github "ReactiveX/RxSwift"
+github "mac-cain13/R.swift.Library"
+github "DaveWoodCom/XCGLogger"

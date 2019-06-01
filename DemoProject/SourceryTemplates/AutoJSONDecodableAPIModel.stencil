@@ -1,0 +1,43 @@
+{% for type in types.implementing.AutoJSONDecodableAPIModel %}
+
+    extension {{ type.name }}: JSONDecodableAPIModel {
+        public init?(json: [String: Any]) {
+            {% for variable in type.variables|!annotated:"ignore" %}
+                {# Iterate over all variables that are not annotated as "ignore" #}
+                {% if variable.type.implements.AutoJSONDecodableAPIModel or variable.typeName.array.elementType.implements.AutoJSONDecodableAPIModel %}
+                  {# The variable implements AutoJSONDecodableAPIModel or the variable is an array with elements that implement AutoJSONDecodableAPIModel #}
+                  {% if variable.type.implements.AutoJSONDecodableAPIModel %}
+                    {# The variable implements AutoJSONDecodableAPIModel #}
+                    if let {{variable.name}}Json = json["{{variable.name}}"] as? [String: Any] {
+                      self.{{variable.name}} = {{variable.unwrappedTypeName}}(json: {{variable.name}}Json)
+                    } else {
+                      self.{{variable.name}} = nil
+                    }
+            
+                  {% endif %}
+                  {% if variable.typeName.array.elementType.implements.AutoJSONDecodableAPIModel %}
+                    {# The variable is an array with elements that implement AutoJSONDecodableAPIModel #}
+                    if let {{variable.name}}Json = json["{{variable.name}}"] as? [[String: Any]] {
+                      self.{{variable.name}} = {{variable.name}}Json.flatMap { {{variable.typeName.array.elementType.name}}(json: $0) }
+                    } else {
+                      self.{{variable.name}} = nil
+                    }
+            
+                  {% endif %}
+                {% else %}
+                  {% if variable.isOptional %}
+                    self.{{variable.name}} = json["{{variable.name}}"] as? {{variable.unwrappedTypeName}}
+            
+            
+                  {% else %}
+                    guard let {{variable.name}} = json["{{variable.name}}"] as? {{variable.typeName}} else { return nil }
+                    self.{{variable.name}} = {{variable.name}}
+            
+                  {% endif %}
+                {% endif %}
+                {% endfor %}
+        }
+    }
+
+    
+{% endfor %}

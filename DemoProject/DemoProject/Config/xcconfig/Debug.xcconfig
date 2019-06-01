@@ -1,0 +1,12 @@
+//
+//  Debug.xcconfig
+//  StoryExercise
+//
+//  Created by Daniel Asher on 26/03/2018.
+//  Copyright © 2018 LEXI LABS. All rights reserved.
+//
+
+#include "TypeCheckTimings.xcconfig"
+
+IS_CODE_COVERAGE = TRUE
+REALM_SERVER_URL = "realm://staging.lexilabs.co"
