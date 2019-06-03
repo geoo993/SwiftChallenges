@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70FC78322A51208000B63D8 /* AutoJSONDecodableAPIModel.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC78022A51207000B63D8 /* AutoJSONDecodableAPIModel.generated.swift */; };
+		C70FC78422A51208000B63D8 /* AutoAPICollectionResponse.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC78122A51208000B63D8 /* AutoAPICollectionResponse.generated.swift */; };
+		C70FC78522A51208000B63D8 /* AutoAPIRequestQueryItems.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC78222A51208000B63D8 /* AutoAPIRequestQueryItems.generated.swift */; };
+		C70FC78622A51214000B63D8 /* BoolExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0922A2AF590025C021 /* BoolExt.swift */; };
+		C70FC78722A5121E000B63D8 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF1622A2AF590025C021 /* APIManager.swift */; };
+		C70FC78822A5121E000B63D8 /* GetBeersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF1522A2AF590025C021 /* GetBeersRequest.swift */; };
+		C70FC78922A5121E000B63D8 /* GetBeersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF1022A2AF590025C021 /* GetBeersResponse.swift */; };
+		C70FC78A22A5121E000B63D8 /* GetStylesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0F22A2AF590025C021 /* GetStylesRequest.swift */; };
+		C70FC78B22A5121E000B63D8 /* GetStylesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0E22A2AF590025C021 /* GetStylesResponse.swift */; };
+		C70FC78C22A5121E000B63D8 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF1722A2AF590025C021 /* Protocols.swift */; };
+		C70FC78D22A51223000B63D8 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0B22A2AF590025C021 /* Beer.swift */; };
+		C70FC78E22A51223000B63D8 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0C22A2AF590025C021 /* Brewery.swift */; };
+		C70FC78F22A51223000B63D8 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0D22A2AF590025C021 /* Style.swift */; };
 		C7AACEF922A2AEDF0025C021 /* BreweryDBKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AACEEF22A2AEDF0025C021 /* BreweryDBKit.framework */; };
 		C7AACEFE22A2AEDF0025C021 /* BreweryDBKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACEFD22A2AEDF0025C021 /* BreweryDBKitTests.swift */; };
 		C7AACF0022A2AEDF0025C021 /* BreweryDBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AACEF222A2AEDF0025C021 /* BreweryDBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7AACF1822A2AF590025C021 /* BoolExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0922A2AF590025C021 /* BoolExt.swift */; };
-		C7AACF1922A2AF590025C021 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0B22A2AF590025C021 /* Beer.swift */; };
-		C7AACF1A22A2AF590025C021 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0C22A2AF590025C021 /* Brewery.swift */; };
-		C7AACF1B22A2AF590025C021 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0D22A2AF590025C021 /* Style.swift */; };
-		C7AACF1C22A2AF590025C021 /* GetStylesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0E22A2AF590025C021 /* GetStylesResponse.swift */; };
-		C7AACF1D22A2AF590025C021 /* GetStylesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF0F22A2AF590025C021 /* GetStylesRequest.swift */; };
-		C7AACF1E22A2AF590025C021 /* GetBeersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF1022A2AF590025C021 /* GetBeersResponse.swift */; };
-		C7AACF2222A2AF590025C021 /* GetBeersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF1522A2AF590025C021 /* GetBeersRequest.swift */; };
-		C7AACF2322A2AF590025C021 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF1622A2AF590025C021 /* APIManager.swift */; };
-		C7AACF2422A2AF590025C021 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF1722A2AF590025C021 /* Protocols.swift */; };
-		C7AACF2822A2B1830025C021 /* AutoJSONDecodableAPIModel.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF2522A2B1830025C021 /* AutoJSONDecodableAPIModel.generated.swift */; };
-		C7AACF2922A2B1830025C021 /* AutoAPICollectionResponse.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF2622A2B1830025C021 /* AutoAPICollectionResponse.generated.swift */; };
-		C7AACF2A22A2B1830025C021 /* AutoAPIRequestQueryItems.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AACF2722A2B1830025C021 /* AutoAPIRequestQueryItems.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C70FC78022A51207000B63D8 /* AutoJSONDecodableAPIModel.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoJSONDecodableAPIModel.generated.swift; sourceTree = "<group>"; };
+		C70FC78122A51208000B63D8 /* AutoAPICollectionResponse.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoAPICollectionResponse.generated.swift; sourceTree = "<group>"; };
+		C70FC78222A51208000B63D8 /* AutoAPIRequestQueryItems.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoAPIRequestQueryItems.generated.swift; sourceTree = "<group>"; };
+		C765B3BE22A3A907001098B5 /* .sourcery.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .sourcery.yml; sourceTree = "<group>"; };
 		C7AACEEF22A2AEDF0025C021 /* BreweryDBKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BreweryDBKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AACEF222A2AEDF0025C021 /* BreweryDBKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreweryDBKit.h; sourceTree = "<group>"; };
 		C7AACEF322A2AEDF0025C021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,9 +56,6 @@
 		C7AACF1522A2AF590025C021 /* GetBeersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBeersRequest.swift; sourceTree = "<group>"; };
 		C7AACF1622A2AF590025C021 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		C7AACF1722A2AF590025C021 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		C7AACF2522A2B1830025C021 /* AutoJSONDecodableAPIModel.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoJSONDecodableAPIModel.generated.swift; sourceTree = "<group>"; };
-		C7AACF2622A2B1830025C021 /* AutoAPICollectionResponse.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoAPICollectionResponse.generated.swift; sourceTree = "<group>"; };
-		C7AACF2722A2B1830025C021 /* AutoAPIRequestQueryItems.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoAPIRequestQueryItems.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +77,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C765B3CC22A3B113001098B5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C7AACF1622A2AF590025C021 /* APIManager.swift */,
+				C7AACF1522A2AF590025C021 /* GetBeersRequest.swift */,
+				C7AACF1022A2AF590025C021 /* GetBeersResponse.swift */,
+				C7AACF0F22A2AF590025C021 /* GetStylesRequest.swift */,
+				C7AACF0E22A2AF590025C021 /* GetStylesResponse.swift */,
+				C7AACF1722A2AF590025C021 /* Protocols.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C765B3CD22A3B12E001098B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7AACF0922A2AF590025C021 /* BoolExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C7AACEE522A2AEDF0025C021 = {
 			isa = PBXGroup;
 			children = (
+				C765B3BE22A3A907001098B5 /* .sourcery.yml */,
 				C7AACEF122A2AEDF0025C021 /* BreweryDBKit */,
 				C7AACEFC22A2AEDF0025C021 /* BreweryDBKitTests */,
 				C7AACEF022A2AEDF0025C021 /* Products */,
@@ -97,15 +120,10 @@
 		C7AACEF122A2AEDF0025C021 /* BreweryDBKit */ = {
 			isa = PBXGroup;
 			children = (
-				C7AACF1622A2AF590025C021 /* APIManager.swift */,
-				C7AACF0922A2AF590025C021 /* BoolExt.swift */,
-				C7AACF1122A2AF590025C021 /* Generated */,
-				C7AACF1522A2AF590025C021 /* GetBeersRequest.swift */,
-				C7AACF1022A2AF590025C021 /* GetBeersResponse.swift */,
-				C7AACF0F22A2AF590025C021 /* GetStylesRequest.swift */,
-				C7AACF0E22A2AF590025C021 /* GetStylesResponse.swift */,
 				C7AACF0A22A2AF590025C021 /* Models */,
-				C7AACF1722A2AF590025C021 /* Protocols.swift */,
+				C765B3CC22A3B113001098B5 /* Services */,
+				C765B3CD22A3B12E001098B5 /* Extensions */,
+				C7AACF1122A2AF590025C021 /* Generated */,
 				C7AACEF222A2AEDF0025C021 /* BreweryDBKit.h */,
 				C7AACEF322A2AEDF0025C021 /* Info.plist */,
 			);
@@ -134,9 +152,9 @@
 		C7AACF1122A2AF590025C021 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				C7AACF2622A2B1830025C021 /* AutoAPICollectionResponse.generated.swift */,
-				C7AACF2722A2B1830025C021 /* AutoAPIRequestQueryItems.generated.swift */,
-				C7AACF2522A2B1830025C021 /* AutoJSONDecodableAPIModel.generated.swift */,
+				C70FC78122A51208000B63D8 /* AutoAPICollectionResponse.generated.swift */,
+				C70FC78222A51208000B63D8 /* AutoAPIRequestQueryItems.generated.swift */,
+				C70FC78022A51207000B63D8 /* AutoJSONDecodableAPIModel.generated.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -160,6 +178,7 @@
 			buildConfigurationList = C7AACF0322A2AEDF0025C021 /* Build configuration list for PBXNativeTarget "BreweryDBKit" */;
 			buildPhases = (
 				C7AACEEA22A2AEDF0025C021 /* Headers */,
+				C765B3BD22A3A742001098B5 /* Run Sourcery */,
 				C7AACEEB22A2AEDF0025C021 /* Sources */,
 				C7AACEEC22A2AEDF0025C021 /* Frameworks */,
 				C7AACEED22A2AEDF0025C021 /* Resources */,
@@ -245,24 +264,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C765B3BD22A3A742001098B5 /* Run Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Sourcery";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/BreweryDBKit/Generated/AutoAPICollectionResponse.generated.swift",
+				"$(SRCROOT)/BreweryDBKit/Generated/AutoAPIRequestQueryItems.generated.swift",
+				"$(SRCROOT)/BreweryDBKit/Generated/AutoJSONDecodableAPIModel.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/../Sourcery/bin/sourcery\" --config $SRCROOT/.sourcery.yml\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7AACEEB22A2AEDF0025C021 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7AACF2322A2AF590025C021 /* APIManager.swift in Sources */,
-				C7AACF1E22A2AF590025C021 /* GetBeersResponse.swift in Sources */,
-				C7AACF1D22A2AF590025C021 /* GetStylesRequest.swift in Sources */,
-				C7AACF2222A2AF590025C021 /* GetBeersRequest.swift in Sources */,
-				C7AACF1C22A2AF590025C021 /* GetStylesResponse.swift in Sources */,
-				C7AACF1822A2AF590025C021 /* BoolExt.swift in Sources */,
-				C7AACF1A22A2AF590025C021 /* Brewery.swift in Sources */,
-				C7AACF2822A2B1830025C021 /* AutoJSONDecodableAPIModel.generated.swift in Sources */,
-				C7AACF2422A2AF590025C021 /* Protocols.swift in Sources */,
-				C7AACF2A22A2B1830025C021 /* AutoAPIRequestQueryItems.generated.swift in Sources */,
-				C7AACF1922A2AF590025C021 /* Beer.swift in Sources */,
-				C7AACF1B22A2AF590025C021 /* Style.swift in Sources */,
-				C7AACF2922A2B1830025C021 /* AutoAPICollectionResponse.generated.swift in Sources */,
+				C70FC78322A51208000B63D8 /* AutoJSONDecodableAPIModel.generated.swift in Sources */,
+				C70FC78822A5121E000B63D8 /* GetBeersRequest.swift in Sources */,
+				C70FC78C22A5121E000B63D8 /* Protocols.swift in Sources */,
+				C70FC78F22A51223000B63D8 /* Style.swift in Sources */,
+				C70FC78522A51208000B63D8 /* AutoAPIRequestQueryItems.generated.swift in Sources */,
+				C70FC78D22A51223000B63D8 /* Beer.swift in Sources */,
+				C70FC78B22A5121E000B63D8 /* GetStylesResponse.swift in Sources */,
+				C70FC78422A51208000B63D8 /* AutoAPICollectionResponse.generated.swift in Sources */,
+				C70FC78A22A5121E000B63D8 /* GetStylesRequest.swift in Sources */,
+				C70FC78E22A51223000B63D8 /* Brewery.swift in Sources */,
+				C70FC78922A5121E000B63D8 /* GetBeersResponse.swift in Sources */,
+				C70FC78622A51214000B63D8 /* BoolExt.swift in Sources */,
+				C70FC78722A5121E000B63D8 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

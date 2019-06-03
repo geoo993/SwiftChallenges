@@ -1,0 +1,33 @@
+{% for type in types.implementing.AutoAPICollectionResponse %}
+{# Iterate over all types implementing AutoAPICollectionResponse #}
+extension {{type.name}} {
+
+  public init?(json: [String: Any]) {
+    guard let status = json["status"] as? String else { return nil }
+    self.status = status
+
+    if let dataArray = json["data"] as? [[String: Any]] {
+        self.data = dataArray.flatMap { return {{type.typealiases.Model.typeName}}(json: $0) }
+    } else {
+        self.data = []
+    }
+
+    {% for var in type.variables|annotated:"additionalParameters" %}
+      {# Iterate over all variables annotated with additionalParameters #}
+      {% if var|annotated:"optionalInResponse" %}
+        {# Variable is annotated as optionalInResponse #}
+        {% if var|annotated:"defaultValue" %}
+          {# Variable annotated as defaultValue and has a defaultValue #}
+          self.{{var.name}} = json["{{var.name}}"] as? {{var.unwrappedTypeName}} ?? {{var.annotations.defaultValue}}
+        {% else %}
+          self.{{var.name}} = json["{{var.name}}"] as? {{var.unwrappedTypeName}}
+        {% endif %}
+      {% else %}
+        guard let {{var.name}} = json["{{var.name}}"] as? {{var.unwrappedTypeName}} else { return nil }
+        self.{{var.name}} = {{var.name}}
+      {% endif %}
+    {% endfor %}
+  }
+}
+
+{% endfor %}
