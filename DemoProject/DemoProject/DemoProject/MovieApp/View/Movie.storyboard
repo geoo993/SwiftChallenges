@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p54-Hp-YM4">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Detail Controller-->
+        <scene sceneID="eFc-R3-nN2">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailController" id="p54-Hp-YM4" customClass="MovieDetailController" customModule="DemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXp-nP-tsC">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="IpB-oi-Su5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uo-Cy-kTG">
+                                <rect key="frame" x="-21.5" y="25" width="43" height="21.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21.5" id="jcT-9U-z69"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" red="0.32156862749999998" green="0.62352941179999999" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="guT-ZT-a11">
+                                <rect key="frame" x="0.0" y="68.5" width="0.0" height="0.0"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eff-49-b93">
+                                <rect key="frame" x="0.0" y="93.5" width="90" height="132"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBj-am-fZT">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="18"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-oG-hde">
+                                        <rect key="frame" x="0.0" y="38" width="90" height="18"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7Z-DR-EqI">
+                                        <rect key="frame" x="0.0" y="76" width="90" height="18"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS5-Jv-3Xd">
+                                        <rect key="frame" x="0.0" y="114" width="90" height="18"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sc4-4E-D7R">
+                                <rect key="frame" x="332.5" y="94.5" width="5" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAh-Op-qep">
+                                        <rect key="frame" x="0.0" y="0.0" width="5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uM-ng-G4z">
+                                        <rect key="frame" x="0.0" y="37.5" width="5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4br-Zw-Kh7">
+                                        <rect key="frame" x="0.0" y="75" width="5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l5-Pe-piL">
+                                        <rect key="frame" x="0.0" y="112.5" width="5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2t-0C-B3w">
+                                <rect key="frame" x="-40" y="16" width="40" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Favourite"/>
+                                <state key="normal" image="selectedHeart"/>
+                                <connections>
+                                    <action selector="markMovieAsFav:" destination="p54-Hp-YM4" eventType="touchUpInside" id="jFb-nu-21O"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your favourite movie!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjI-Yz-KJe">
+                                <rect key="frame" x="-155" y="-136.5" width="310" height="36.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36.5" id="OMW-cx-pKi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansChakma-Regular" family="Noto Sans Chakma" pointSize="25"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Y2t-0C-B3w" secondAttribute="bottom" constant="-56" id="0Wg-yf-G3Z"/>
+                            <constraint firstItem="Y2t-0C-B3w" firstAttribute="leading" secondItem="WXp-nP-tsC" secondAttribute="leadingMargin" constant="-56" id="40L-8d-BT0"/>
+                            <constraint firstItem="IpB-oi-Su5" firstAttribute="centerX" secondItem="WXp-nP-tsC" secondAttribute="centerX" id="6JY-fH-wSo"/>
+                            <constraint firstItem="NjI-Yz-KJe" firstAttribute="centerX" secondItem="IpB-oi-Su5" secondAttribute="centerX" id="73W-Mf-mbe"/>
+                            <constraint firstItem="guT-ZT-a11" firstAttribute="leading" secondItem="eff-49-b93" secondAttribute="leading" id="9Pf-Dy-utS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="IpB-oi-Su5" secondAttribute="leading" constant="16" id="EDk-xc-nz4"/>
+                            <constraint firstItem="sc4-4E-D7R" firstAttribute="leading" secondItem="WXp-nP-tsC" secondAttribute="leading" constant="332.5" id="FbF-Fv-B8I"/>
+                            <constraint firstItem="sc4-4E-D7R" firstAttribute="top" secondItem="WXp-nP-tsC" secondAttribute="topMargin" constant="94.5" id="IS0-16-MHf"/>
+                            <constraint firstItem="Y2t-0C-B3w" firstAttribute="trailing" secondItem="guT-ZT-a11" secondAttribute="trailing" id="MIp-5d-0xh"/>
+                            <constraint firstItem="IpB-oi-Su5" firstAttribute="bottom" secondItem="zlQ-74-f2a" secondAttribute="bottom" id="QyI-PQ-mSI"/>
+                            <constraint firstItem="IpB-oi-Su5" firstAttribute="leading" secondItem="guT-ZT-a11" secondAttribute="leading" id="T4A-mS-J8S"/>
+                            <constraint firstItem="Y2t-0C-B3w" firstAttribute="centerY" secondItem="9Uo-Cy-kTG" secondAttribute="centerY" id="TtV-Ha-qn4"/>
+                            <constraint firstItem="eff-49-b93" firstAttribute="centerY" secondItem="sc4-4E-D7R" secondAttribute="centerY" id="fQ7-FT-rZi"/>
+                            <constraint firstItem="guT-ZT-a11" firstAttribute="top" secondItem="WXp-nP-tsC" secondAttribute="topMargin" constant="68.5" id="gLg-dv-8PD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="guT-ZT-a11" secondAttribute="bottom" constant="-68.5" id="kf1-hK-LeD"/>
+                            <constraint firstItem="eff-49-b93" firstAttribute="top" secondItem="9Uo-Cy-kTG" secondAttribute="bottom" constant="47" id="l9n-Hy-WWo"/>
+                            <constraint firstItem="9Uo-Cy-kTG" firstAttribute="centerX" secondItem="guT-ZT-a11" secondAttribute="centerX" id="n8x-70-juV"/>
+                            <constraint firstItem="IpB-oi-Su5" firstAttribute="top" secondItem="zlQ-74-f2a" secondAttribute="top" id="nHg-Mu-J6x"/>
+                            <constraint firstItem="NjI-Yz-KJe" firstAttribute="top" secondItem="WXp-nP-tsC" secondAttribute="top" constant="-136.5" id="w03-8T-HMb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zlQ-74-f2a"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="0.0" height="0.0"/>
+                    <connections>
+                        <outlet property="directorNameLabel" destination="WAh-Op-qep" id="eDn-w3-0Yw"/>
+                        <outlet property="favouriteNoticeLabel" destination="NjI-Yz-KJe" id="7SZ-9d-xe1"/>
+                        <outlet property="heartButton" destination="Y2t-0C-B3w" id="LJf-0B-bAx"/>
+                        <outlet property="incomeLabel" destination="4br-Zw-Kh7" id="pXN-dx-DfC"/>
+                        <outlet property="movieNameLabel" destination="9Uo-Cy-kTG" id="cSB-HN-xre"/>
+                        <outlet property="moviePosterImageView" destination="guT-ZT-a11" id="WyS-uR-p1X"/>
+                        <outlet property="ratingLabel" destination="2l5-Pe-piL" id="bHQ-In-1vx"/>
+                        <outlet property="releaseDateLabel" destination="2uM-ng-G4z" id="c7w-Vx-ixO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RrN-Bk-ctg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-245" y="1590"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundImage" width="375" height="667"/>
+        <image name="selectedHeart" width="25" height="23"/>
+    </resources>
+</document>

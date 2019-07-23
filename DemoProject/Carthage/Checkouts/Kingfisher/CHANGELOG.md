@@ -2,6 +2,33 @@
 
 -----
 
+## [5.7.0 - Summer Bird](https://github.com/onevcat/Kingfisher/releases/tag/5.7.0) (2019-07-03)
+
+#### Add
+* Mark `cacheFileURL(forKey:)` of `DiskStorage` to public. [#1214](https://github.com/onevcat/Kingfisher/issues/1214)
+* Mark `KingfisherManager` initializer to public so other dependencies can customize the manager behavior. [#1216](https://github.com/onevcat/Kingfisher/issues/1216)
+
+#### Fix
+* Performance improvement on progressive JPEG scanning. [#1218](https://github.com/onevcat/Kingfisher/pull/1218)
+* Fix a potential thread issue when checking progressive JPEG. [#1220](https://github.com/onevcat/Kingfisher/pull/1220)
+
+#### Remove
+* The deprecated `Result` extensions for Swift 4 back compatibility are removed. [#1224](https://github.com/onevcat/Kingfisher/pull/1224)
+
+---
+
+## [5.6.0 - The Sands of Time](https://github.com/onevcat/Kingfisher/releases/tag/5.6.0) (2019-06-11)
+
+#### Add
+* Support extending memory cache TTL to a specified time instead of the fixed original expire setting. Use the `.memoryCacheAccessExtendingExpiration` to set a customize expiration extending duration when accessing the image. [#1196](https://github.com/onevcat/Kingfisher/pull/1196)
+* Add prebuilt binary framework when releasing to GitHub. Further supporting of fully compatible binary framework would come after Swift module stability. [#1194](https://github.com/onevcat/Kingfisher/pull/1194)
+
+#### Fix
+* Resizing performance for animated images should be improved dramatically. [#1189](https://github.com/onevcat/Kingfisher/pull/1189)
+* A small optimization on MD5 calculation for image file cache key. [#1183](https://github.com/onevcat/Kingfisher/pull/1183)
+
+---
+
 ## [5.5.0 - Progressive JPEG](https://github.com/onevcat/Kingfisher/releases/tag/5.5.0) (2019-05-17)
 
 #### Add

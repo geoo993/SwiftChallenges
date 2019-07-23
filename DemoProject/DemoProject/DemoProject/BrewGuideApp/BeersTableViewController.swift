@@ -60,5 +60,15 @@ class BeersTableViewController: UITableViewController {
     guard let beerCell = cell as? BeerTableViewCell else { return }
     beerCell.cancelImageLoading()
   }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let beer = beers[indexPath.row]
+        if let beerDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "BeerDetailViewController") as? BeerDetailViewController {
+            beerDetailViewController.beer = beer
+            beerDetailViewController.apiManager = apiManager
+            self.navigationController?.pushViewController(beerDetailViewController, animated: true)
+        }
+        
+    }
 }
 

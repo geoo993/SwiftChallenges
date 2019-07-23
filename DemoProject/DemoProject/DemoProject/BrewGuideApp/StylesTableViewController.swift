@@ -52,5 +52,15 @@ class StylesTableViewController: UITableViewController {
     cell.textLabel?.text = styles[indexPath.row].name
     return cell
   }
-  
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let style = styles[indexPath.row]
+        if let beersTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "BeersTableViewController") as? BeersTableViewController {
+            beersTableViewController.style = style
+            beersTableViewController.apiManager = apiManager
+            self.navigationController?.pushViewController(beersTableViewController, animated: true)
+        }
+        
+    }
+    
 }

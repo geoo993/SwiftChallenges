@@ -13,15 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var lastTime: CFTimeInterval = 0.0
-    //private let rootVC = CatFeedViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
-        //window?.rootViewController = UINavigationController(rootViewController: BlueViewController())
-        
         // Places App
-        //LocationManager.sharedManager.initializeLocationManager()
+        // LocationManager.sharedManager.initializeLocationManager()
         
         
         // CatstagramApp
@@ -64,10 +60,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     /*
+     
     //// FOR CATSTAGRAM App
     func loadCatstagram() {
         window = WindowWithStatusBar(frame: UIScreen.main.bounds)
-        let rootNavController = UINavigationController(rootViewController: rootVC)
+        let rootNavController = UINavigationController(rootViewController: CatFeedViewController())
         
         let font = UIFont(name: "OleoScript-Regular", size: 20.0)!
         rootNavController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: font]

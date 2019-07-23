@@ -12,12 +12,12 @@ class Service {
     var redController: RedViewController?
 }
 
-class RedViewController: UITableViewController {
+class RedViewController: UIViewController {
     let service = Service()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        tableView.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor.red
         service.redController = self
     }
     

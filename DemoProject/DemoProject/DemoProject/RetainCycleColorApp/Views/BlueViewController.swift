@@ -8,11 +8,11 @@
 
 import UIKit
 
-class BlueViewController: UITableViewController {
+class BlueViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = UIColor.blue
+        view.backgroundColor = UIColor.blue
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Show red", style: .plain, target: self, action: #selector(handleTap))
     }
 

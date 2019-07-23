@@ -13,7 +13,6 @@
 		C7296E802286F98B00E99627 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7296E7E2286F98B00E99627 /* PersistencyManager.swift */; };
 		C7296E822286F9AA00E99627 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7296E812286F9AA00E99627 /* NotificationExtension.swift */; };
 		C73595F42286D79D004FDFD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73595F32286D79D004FDFD4 /* AppDelegate.swift */; };
-		C73595F92286D79D004FDFD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73595F72286D79D004FDFD4 /* Main.storyboard */; };
 		C73595FB2286D7A0004FDFD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73595FA2286D7A0004FDFD4 /* Assets.xcassets */; };
 		C73595FE2286D7A0004FDFD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73595FC2286D7A0004FDFD4 /* LaunchScreen.storyboard */; };
 		C73596092286D7A1004FDFD4 /* DemoProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73596082286D7A1004FDFD4 /* DemoProjectTests.swift */; };
@@ -93,6 +92,14 @@
 		C75128C122874D8C00735980 /* Playgrounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75128AC22874D8B00735980 /* Playgrounds.framework */; };
 		C75128C222874D8C00735980 /* Playgrounds.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C75128AC22874D8B00735980 /* Playgrounds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C75128CA2287510400735980 /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75128C92287510400735980 /* DefaultViewController.swift */; };
+		C75D0EC622E7BFBA001DFF9C /* BrewGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75D0EC522E7BFBA001DFF9C /* BrewGuide.storyboard */; };
+		C75D0EC822E7C083001DFF9C /* Catstagram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75D0EC722E7C083001DFF9C /* Catstagram.storyboard */; };
+		C75D0ECA22E7C0D0001DFF9C /* FlickrPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75D0EC922E7C0D0001DFF9C /* FlickrPhotos.storyboard */; };
+		C75D0ECD22E7C3AF001DFF9C /* Places.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75D0ECB22E7C337001DFF9C /* Places.storyboard */; };
+		C75D0ECF22E7C426001DFF9C /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75D0ECE22E7C426001DFF9C /* Movie.storyboard */; };
+		C75D0ED122E7C4DE001DFF9C /* Color.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75D0ED022E7C4DE001DFF9C /* Color.storyboard */; };
+		C75D0ED322E7C6AC001DFF9C /* Area.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75D0ED222E7C6AC001DFF9C /* Area.storyboard */; };
+		C75D0ED522E7C6FB001DFF9C /* PopAlbum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75D0ED422E7C6FB001DFF9C /* PopAlbum.storyboard */; };
 		C7874E00228700260088144B /* DependencyInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874DFF228700260088144B /* DependencyInjectionTests.swift */; };
 		C7874E01228701430088144B /* Favourable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73596572286D8B9004FDFD4 /* Favourable.swift */; };
 		C7874E02228701440088144B /* Favourable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73596572286D8B9004FDFD4 /* Favourable.swift */; };
@@ -124,6 +131,7 @@
 		C7BAFCE6229BD11500B3512E /* FlickrPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAFCE3229BD11500B3512E /* FlickrPhotosViewController.swift */; };
 		C7BAFCE7229BD11500B3512E /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAFCE4229BD11500B3512E /* SearchResultsViewController.swift */; };
 		C7BAFCE9229BD15E00B3512E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAFCE8229BD15E00B3512E /* Result.swift */; };
+		C7D5918F22E5225100667787 /* BeersNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D5918E22E5225100667787 /* BeersNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,7 +206,6 @@
 		C7296E812286F9AA00E99627 /* NotificationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
 		C73595F02286D79D004FDFD4 /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73595F32286D79D004FDFD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C73595F82286D79D004FDFD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C73595FA2286D7A0004FDFD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73595FD2286D7A0004FDFD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C73595FF2286D7A0004FDFD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -291,6 +298,14 @@
 		C75128C92287510400735980 /* DefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
 		C75128CE22875FA000735980 /* BuilderDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BuilderDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C75128CF2287689700735980 /* TemplateMethodDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TemplateMethodDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C75D0EC522E7BFBA001DFF9C /* BrewGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = BrewGuide.storyboard; path = ../../../../../../../../System/Volumes/Data/Users/GeorgeQuentin/Dev/SwiftJobInterviewChallenges/DemoProject/DemoProject/DemoProject/BrewGuideApp/BrewGuide.storyboard; sourceTree = "<group>"; };
+		C75D0EC722E7C083001DFF9C /* Catstagram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Catstagram.storyboard; path = ../../../../../../../../../System/Volumes/Data/Users/GeorgeQuentin/Dev/SwiftJobInterviewChallenges/DemoProject/DemoProject/DemoProject/CatstagramApp/View/Catstagram.storyboard; sourceTree = "<group>"; };
+		C75D0EC922E7C0D0001DFF9C /* FlickrPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlickrPhotos.storyboard; path = ../../../../../../../../../System/Volumes/Data/Users/GeorgeQuentin/Dev/SwiftJobInterviewChallenges/DemoProject/DemoProject/DemoProject/FlickrPhotosApp/View/FlickrPhotos.storyboard; sourceTree = "<group>"; };
+		C75D0ECB22E7C337001DFF9C /* Places.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Places.storyboard; sourceTree = "<group>"; };
+		C75D0ECE22E7C426001DFF9C /* Movie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Movie.storyboard; path = ../../../../../../../../../System/Volumes/Data/Users/GeorgeQuentin/Dev/SwiftJobInterviewChallenges/DemoProject/DemoProject/DemoProject/MovieApp/View/Movie.storyboard; sourceTree = "<group>"; };
+		C75D0ED022E7C4DE001DFF9C /* Color.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Color.storyboard; path = ../../../../../../../../../System/Volumes/Data/Users/GeorgeQuentin/Dev/SwiftJobInterviewChallenges/DemoProject/DemoProject/DemoProject/RetainCycleColorApp/Views/Color.storyboard; sourceTree = "<group>"; };
+		C75D0ED222E7C6AC001DFF9C /* Area.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Area.storyboard; path = ../../../../../../../../../System/Volumes/Data/Users/GeorgeQuentin/Dev/SwiftJobInterviewChallenges/DemoProject/DemoProject/DemoProject/AreasApp/Views/Area.storyboard; sourceTree = "<group>"; };
+		C75D0ED422E7C6FB001DFF9C /* PopAlbum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = PopAlbum.storyboard; path = ../../../../../../../../../System/Volumes/Data/Users/GeorgeQuentin/Dev/SwiftJobInterviewChallenges/DemoProject/DemoProject/DemoProject/PopAlbumApp/Views/PopAlbum.storyboard; sourceTree = "<group>"; };
 		C7749609229D6888007925A5 /* EmptyString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EmptyString.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7768550229D8C9B004988C3 /* WeakAndUnowned.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WeakAndUnowned.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7874DFF228700260088144B /* DependencyInjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionTests.swift; sourceTree = "<group>"; };
@@ -325,6 +340,7 @@
 		C7BAFCE8229BD15E00B3512E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		C7BB79EE22991FEA00E0D0AF /* CodableAndDecodable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CodableAndDecodable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7D242822286E2F100A5964B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C7D5918E22E5225100667787 /* BeersNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BeersNavigationController.swift; path = ../../../../../../../../System/Volumes/Data/Users/GeorgeQuentin/Dev/SwiftJobInterviewChallenges/DemoProject/DemoProject/DemoProject/BrewGuideApp/BeersNavigationController.swift; sourceTree = "<group>"; };
 		C7FADC8D22A15C4100648FDF /* AutoEquatable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AutoEquatable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7FAF0C5228719710038253C /* FactoryMethodDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FactoryMethodDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7FAF0C6228719E70038253C /* ValueAndReferenceTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ValueAndReferenceTypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -389,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				C73596372286D8B8004FDFD4 /* Album */,
+				C75D0ED422E7C6FB001DFF9C /* PopAlbum.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -448,6 +465,7 @@
 		C7296E8B2286FBAA00E99627 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C75D0ECE22E7C426001DFF9C /* Movie.storyboard */,
 				C73596302286D8B8004FDFD4 /* Movie */,
 			);
 			path = View;
@@ -477,6 +495,7 @@
 			children = (
 				C735963F2286D8B8004FDFD4 /* AreaListController.swift */,
 				C73596402286D8B8004FDFD4 /* AreaTableCell.swift */,
+				C75D0ED222E7C6AC001DFF9C /* Area.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -587,7 +606,6 @@
 				C74FEBAC229D33110052FE2B /* Utilities.h */,
 				C74FEBAB229D33110052FE2B /* Utilities.m */,
 				C74FEBAE229D33110052FE2B /* WindowWithStatusBar.swift */,
-				C73595F72286D79D004FDFD4 /* Main.storyboard */,
 				C73595FA2286D7A0004FDFD4 /* Assets.xcassets */,
 				C73595FC2286D7A0004FDFD4 /* LaunchScreen.storyboard */,
 				C73595FF2286D7A0004FDFD4 /* Info.plist */,
@@ -607,6 +625,7 @@
 		C73596232286D8B8004FDFD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C75D0ECB22E7C337001DFF9C /* Places.storyboard */,
 				C73596272286D8B8004FDFD4 /* Cell */,
 				C73596242286D8B8004FDFD4 /* Home */,
 				C73596352286D8B8004FDFD4 /* PlaceDetail */,
@@ -651,6 +670,7 @@
 			children = (
 				C73596332286D8B8004FDFD4 /* BlueViewController.swift */,
 				C73596342286D8B8004FDFD4 /* RedViewController.swift */,
+				C75D0ED022E7C4DE001DFF9C /* Color.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -909,6 +929,7 @@
 				C74FEBC8229D34010052FE2B /* AsyncImageView.swift */,
 				C74FEBC7229D34010052FE2B /* CatPhotoTableViewCell.swift */,
 				C74FEBC6229D34010052FE2B /* CommentView.swift */,
+				C75D0EC722E7C083001DFF9C /* Catstagram.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1016,11 +1037,13 @@
 		C7AACF2B22A2B1980025C021 /* BrewGuideApp */ = {
 			isa = PBXGroup;
 			children = (
+				C7D5918E22E5225100667787 /* BeersNavigationController.swift */,
 				C7AACF2C22A2B2760025C021 /* BeerDetailViewController.swift */,
 				C7AACF2D22A2B2760025C021 /* BeerExt.swift */,
 				C7AACF2E22A2B2760025C021 /* BeersTableViewController.swift */,
 				C7AACF3022A2B2760025C021 /* BeerTableViewCell.swift */,
 				C7AACF2F22A2B2760025C021 /* StylesTableViewController.swift */,
+				C75D0EC522E7BFBA001DFF9C /* BrewGuide.storyboard */,
 			);
 			path = BrewGuideApp;
 			sourceTree = "<group>";
@@ -1083,6 +1106,7 @@
 				C7BAFCE3229BD11500B3512E /* FlickrPhotosViewController.swift */,
 				C7BAFCE2229BD11500B3512E /* SearchResultsCollectionViewCell.swift */,
 				C7BAFCE4229BD11500B3512E /* SearchResultsViewController.swift */,
+				C75D0EC922E7C0D0001DFF9C /* FlickrPhotos.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1253,8 +1277,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C73596872286D8BA004FDFD4 /* PlaceTableCell.xib in Resources */,
+				C75D0ECD22E7C3AF001DFF9C /* Places.storyboard in Resources */,
+				C75D0EC622E7BFBA001DFF9C /* BrewGuide.storyboard in Resources */,
+				C75D0ED322E7C6AC001DFF9C /* Area.storyboard in Resources */,
 				C7AACF9322A2B8260025C021 /* Cartfile.resolved in Resources */,
 				C7AACF8F22A2B8260025C021 /* Cartfile in Resources */,
+				C75D0EC822E7C083001DFF9C /* Catstagram.storyboard in Resources */,
+				C75D0ED122E7C4DE001DFF9C /* Color.storyboard in Resources */,
 				C73595FE2286D7A0004FDFD4 /* LaunchScreen.storyboard in Resources */,
 				C7AACF9022A2B8260025C021 /* Pluginfile in Resources */,
 				C7AACF8522A2B8160025C021 /* Debug.xcconfig in Resources */,
@@ -1268,11 +1297,13 @@
 				C7296E7A2286F8EE00E99627 /* albums.json in Resources */,
 				C74FEBA0229D15930052FE2B /* OleoScript-Bold.ttf in Resources */,
 				C735969B2286D8BA004FDFD4 /* PlacesList.json in Resources */,
+				C75D0ED522E7C6FB001DFF9C /* PopAlbum.storyboard in Resources */,
 				C73596982286D8BA004FDFD4 /* SonyWorld.gpx in Resources */,
 				C7AACF8622A2B8160025C021 /* PermissionConfiguration.xcconfig in Resources */,
 				C73595FB2286D7A0004FDFD4 /* Assets.xcassets in Resources */,
 				C73596802286D8BA004FDFD4 /* PlaceView.xib in Resources */,
-				C73595F92286D79D004FDFD4 /* Main.storyboard in Resources */,
+				C75D0ECF22E7C426001DFF9C /* Movie.storyboard in Resources */,
+				C75D0ECA22E7C0D0001DFF9C /* FlickrPhotos.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1381,6 +1412,7 @@
 				C7BAFCDF229BD10D00B3512E /* FlickrPhoto.swift in Sources */,
 				C74FEBC9229D34010052FE2B /* CommentView.swift in Sources */,
 				C73596852286D8BA004FDFD4 /* PopMusicViewController.swift in Sources */,
+				C7D5918F22E5225100667787 /* BeersNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1438,14 +1470,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C73595F72286D79D004FDFD4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C73595F82286D79D004FDFD4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C73595FC2286D7A0004FDFD4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
