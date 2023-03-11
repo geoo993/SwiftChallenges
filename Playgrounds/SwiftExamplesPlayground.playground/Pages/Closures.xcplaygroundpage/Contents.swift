@@ -14,11 +14,8 @@ final class Pokemon: CustomDebugStringConvertible {
 }
 
 func delay(_ seconds: Int, closure: @escaping ()->()) {
-    let time = DispatchTime.now() + .seconds(seconds)
-    DispatchQueue.main.asyncAfter(deadline: time) {
-        print("🕑")
-        closure()
-    }
+    print("🕑")
+    closure()
 }
 
 
@@ -145,14 +142,14 @@ Just( { print("DEMO 1") }() )
     .flatMap(demo2)
     .handleEvents(receiveOutput: { print("\nDEMO 3") })
     .flatMap(demo3)
-    .handleEvents(receiveOutput: { print("\nDEMO 4") })
-    .flatMap(demo4)
-    .handleEvents(receiveOutput: { print("\nDEMO 5") })
-    .flatMap(demo5)
-    .handleEvents(receiveOutput: { print("\nDEMO 6") })
-    .flatMap(demo6)
-    .handleEvents(receiveOutput: { print("\nDEMO 7") })
-    .flatMap(demo7)
+//    .handleEvents(receiveOutput: { print("\nDEMO 4") })
+//    .flatMap(demo4)
+//    .handleEvents(receiveOutput: { print("\nDEMO 5") })
+//    .flatMap(demo5)
+//    .handleEvents(receiveOutput: { print("\nDEMO 6") })
+//    .flatMap(demo6)
+//    .handleEvents(receiveOutput: { print("\nDEMO 7") })
+//    .flatMap(demo7)
     .sink { _ in }
     .store(in: &cancellables)
 
