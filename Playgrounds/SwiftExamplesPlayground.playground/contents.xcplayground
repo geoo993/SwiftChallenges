@@ -13,7 +13,7 @@
         <page name='BO-Notation'/>
         <page name='TypeInferencing'/>
         <page name='VariadicParameter'/>
-        <page name='SwiftConcurrency'/>
+        <page name='AsyncAwait'/>
         <page name='DesignPatterns'/>
         <page name='RepositoryPattern'/>
         <page name='Regexs'/>
@@ -22,5 +22,6 @@
         <page name='SolidPrinciples'/>
         <page name='StyleGuide'/>
         <page name='LazyKeyword'/>
+        <page name='ClassAndStructs'/>
     </pages>
 </playground>
