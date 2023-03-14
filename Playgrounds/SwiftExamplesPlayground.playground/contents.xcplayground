@@ -23,5 +23,6 @@
         <page name='StyleGuide'/>
         <page name='LazyKeyword'/>
         <page name='ClassAndStructs'/>
+        <page name='ArrayAndDictionary'/>
     </pages>
 </playground>

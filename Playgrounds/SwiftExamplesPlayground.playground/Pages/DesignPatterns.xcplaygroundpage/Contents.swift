@@ -102,7 +102,9 @@ example(of: "Builder") {
         .addQueryItem(name: "sort", value: "name")
         .addQueryItem(name: "order", value: "asc")
         .build()
-    print(url?.absoluteString)
+    if let urlString = url?.absoluteString {
+        print(urlString)
+    }
 }
 
 

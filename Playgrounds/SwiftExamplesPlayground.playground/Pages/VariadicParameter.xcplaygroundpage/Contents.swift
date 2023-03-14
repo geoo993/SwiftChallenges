@@ -3,16 +3,16 @@
 import Foundation
 
 
-public enum ExerciseConfigElement {
-    case enableProgress(Bool)
-    case setProgressValue(Double)
-    case showTopBar(animated: Bool)
-    case hideTopBar(animated: Bool)
-    case showBottomBar(animated: Bool)
-    case hideBottomBar(animated: Bool)
-    case showExitButton(Bool)
-    case showProgressBar(Bool)
-    case showHelpButton(Bool)
+public enum ExerciseConfigElement: String {
+    case enableProgress
+    case setProgressValue
+    case showTopBar
+    case hideTopBar
+    case showBottomBar
+    case hideBottomBar
+    case showExitButton
+    case showProgressBar
+    case showHelpButton
 }
 
 public struct ExerciseConfig {
@@ -31,5 +31,9 @@ public struct ExerciseConfig {
 
 func update(with configElement: ExerciseConfigElement...) {
     let config = ExerciseConfig(configElement)
-    print(config)
+    config.elements.forEach {
+        print($0.rawValue)
+    }
 }
+
+update(with: .showExitButton, .enableProgress, .hideBottomBar)

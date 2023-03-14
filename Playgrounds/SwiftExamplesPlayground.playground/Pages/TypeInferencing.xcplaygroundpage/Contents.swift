@@ -47,3 +47,32 @@ let names = ["John", "Ali", "Jane", " Taika"]
 
 // good
 // let names : [String] = ["John", "Ali", "Jane", " Taika"]
+
+enum ContactKind {
+    case family
+    case friend
+    case coworker
+    case acquaintance
+}
+
+func loadContacts(ofKind kind: ContactKind) {
+    print("Selected", kind)
+}
+
+loadContacts(ofKind: .family)
+
+
+//What’s really cool is that the above “dot syntax” doesn’t just work for enum cases,
+// it works when referencing any static property or method as well.
+// For example, here we’ve extended Foundation’s URL type with a static property that creates a URL that points to this very website:
+
+extension URL {
+    static var myPath: URL {
+        URL(string: "https://google.com")!
+    }
+}
+
+let urlRequest = URLRequest(url: .myPath)
+if let urlString = urlRequest.url?.absoluteString {
+    print(urlString)
+}
