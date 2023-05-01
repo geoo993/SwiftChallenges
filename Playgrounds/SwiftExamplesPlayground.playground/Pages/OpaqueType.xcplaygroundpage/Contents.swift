@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 import Foundation
 
 func example(of description: String, action: () -> Void) {
