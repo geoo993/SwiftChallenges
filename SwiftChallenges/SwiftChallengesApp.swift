@@ -4,7 +4,12 @@ import SwiftUI
 struct SwiftChallengesApp: App {
     var body: some Scene {
         WindowGroup {
-            GreatestFilmsView(viewModel: .init())
+            MoviesView(
+                store: .init(
+                    initialState: .init(),
+                    reducer: MoviesDB()
+                )
+            )
         }
     }
 }
