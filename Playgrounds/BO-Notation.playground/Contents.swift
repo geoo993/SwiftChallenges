@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 import Foundation
 
 // From an architectural standpoint, scalability is how easy it is to make changes to your app.
@@ -114,7 +112,7 @@ example(of: "Time complexity - Logarithmic time") {
     print("contains \(number)", calculate)
     
     // If you were checking if the number 451 existed in the array, the naive algorithm would have to iterate from the beginning to end, making a total of nine inspections for the nine values in the array. H
-    // owever, since the array is sorted, you can, right off the bat, drop half of the comparisons necessary by checking the middle value:
+    // However, since the array is sorted, you can, right off the bat, drop half of the comparisons necessary by checking the middle value:
     iterating = 0
     func naiveContains2(_ value: Int, in array: [Int]) -> Bool {
         guard !array.isEmpty else { return false }
@@ -190,6 +188,13 @@ example(of: "Time complexity - Logarithmic time") {
     print("\nPart three")
     let calculate3 = naiveContains3(78, in: numbers)
     print("contains \(number)", calculate3)
+    
+    //When you have an input size of 100, halving the comparisons means you save 50 comparisons.
+    // If input size was 100,000, halving the the comparisons means you save 50,000 comparisons.
+    // The more data you have, the more the halving effect scales. Thus, you can see that the graph appears to approach horizontal.
+    
+   // Algorithms in this category are few, but extremely powerful in situations that allow for it.
+    // The Big O notation for logarithmic time complexity is O(log n).
 }
 
 
@@ -210,19 +215,22 @@ example(of: "Space complexity") {
                    41, 44, 45, 46, 48, 50, 51, 53, 55, 56, 58, 59, 61, 63, 65, 66, 67, 68, 70, 71,
                    73, 74, 76, 77, 80, 81, 83, 86, 87, 88, 90, 93, 95, 97, 98, 99, 105, 150, 153
     ]
-//    printSorted(numbers)
+    print("\nprintSorted")
+    printSorted(numbers)
     
     
     // You could revise the above function to the following:
+    // This implementation respects space constraints.
+    // The overall goal is to iterate through the array multiple times, printing the next smallest value for each iteration.
     func printSorted2(_ array: [Int]) {
-        // 1
+        // 1 - Check for the case if the array is empty. If it is, there’s nothing to print.
         guard !array.isEmpty else { return }
         
-        // 2
+        // 2 - currentCount keeps track of the number of print statements made . minValue stores the last printed value.
         var currentCount = 0
         var minValue = Int.min
         
-        // 3
+        // 3 - The algorithm begins by printing out all values matching the minValue, and updates the currentCount according to the number of print statements made.
         for value in array {
             if value == minValue {
                 print(value)
@@ -232,7 +240,7 @@ example(of: "Space complexity") {
         
         while currentCount < array.count {
             
-            // 4
+            // 4 - Using the while loop, the algorithm finds the lowest value bigger than minValue and stores it in currentValue.
             var currentValue = array.max()!
             
             for value in array {
@@ -241,7 +249,7 @@ example(of: "Space complexity") {
                 }
             }
             
-            // 5
+            // 5 - The algorithm then prints all values of currentValue inside the array while updating currentCount.
             for value in array {
                 if value == currentValue {
                     print(value)
@@ -249,7 +257,7 @@ example(of: "Space complexity") {
                 }
             }
             
-            // 6
+            // 6 - minValue is set to currentValue so the next iteration will try to find the next minimum value
             minValue = currentValue
         }
     }
@@ -257,5 +265,6 @@ example(of: "Space complexity") {
     // This implementation respects space constraints. The overall goal is to iterate through the array multiple times, printing the next smallest value for each iteration.
     //the above algorithm only allocates memory to keep track of a few variables, so the space complexity is O(1).
     // This is in contrast with the previous function, which allocates an entire array to create the sorted representation of the source array.
+    print("\nprintSorted2")
     printSorted2(numbers)
 }
