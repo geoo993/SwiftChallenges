@@ -495,30 +495,30 @@ Notification Center Publisher
 - When a notifaction observer listens to when a new notification name is posted
 */
 
-final class MyButton {
-    static let tapped = Notification.Name("tapped")
-    init() {}
-    
-    func tapped() {
-        NotificationCenter.default.post(name: MyButton.tapped, object: self)
-    }
-}
+//final class MyButton {
+//    static let tapped = Notification.Name("tapped")
+//    init() {}
+//
+//    func tapped() {
+//        NotificationCenter.default.post(name: MyButton.tapped, object: self)
+//    }
+//}
 
-example(of: "NotificationCenter Publisher") {
-    var disposeBag = Set<AnyCancellable>()
-    let myButton = MyButton()
-    
-    NotificationCenter.default
-        .publisher(for: MyButton.tapped)
-//        .subscribe(on: DispatchQueue.global())
-//        .receive(on: DispatchQueue.main)
-        .sink { _ in
-            print("my button was tapped something here")
-        }
-        .store(in: &disposeBag)
-    
-    myButton.tapped()
-}
+//example(of: "NotificationCenter Publisher") {
+//    var disposeBag = Set<AnyCancellable>()
+//    let myButton = MyButton()
+//
+//    NotificationCenter.default
+//        .publisher(for: MyButton.tapped)
+////        .subscribe(on: DispatchQueue.global())
+////        .receive(on: DispatchQueue.main)
+//        .sink { _ in
+//            print("my button was tapped something here")
+//        }
+//        .store(in: &disposeBag)
+//
+//    myButton.tapped()
+//}
 
 /****5E) URL SESSIONS**
 URLSessions publisher
@@ -526,18 +526,18 @@ URLSessions publisher
 
 */
 
-example(of: "URLSession Publisher") {
-    print("we're are fetching the date")
-    
-    var disposeBag = Set<AnyCancellable>()
-    let url = URL(string: "https://www.google.com")!
-    URLSession.shared.dataTaskPublisher(for: url)
-        .map { $0.data }
-        .decode(type: String.self, decoder: JSONDecoder())
-        .replaceError(with: "Hello world")
-        .eraseToAnyPublisher()
-        .sink(receiveValue: { results in
-            print(results.count)
-        })
-        .store(in: &disposeBag)
-}
+//example(of: "URLSession Publisher") {
+//    print("we're are fetching the date")
+//
+//    var disposeBag = Set<AnyCancellable>()
+//    let url = URL(string: "https://www.google.com")!
+//    URLSession.shared.dataTaskPublisher(for: url)
+//        .map { $0.data }
+//        .decode(type: String.self, decoder: JSONDecoder())
+//        .replaceError(with: "Hello world")
+//        .eraseToAnyPublisher()
+//        .sink(receiveValue: { results in
+//            print(results.count)
+//        })
+//        .store(in: &disposeBag)
+//}

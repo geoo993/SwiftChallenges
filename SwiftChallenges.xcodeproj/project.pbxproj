@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C74C4F2729BCFC75000872C8 /* SwiftChallengesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74C4F2629BCFC75000872C8 /* SwiftChallengesApp.swift */; };
 		C74C4F2B29BCFC77000872C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74C4F2A29BCFC77000872C8 /* Assets.xcassets */; };
-		C74C4F2E29BCFC77000872C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74C4F2D29BCFC77000872C8 /* Preview Assets.xcassets */; };
 		C75CA9272A07E1E400DA5420 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C75CA9262A07E1E400DA5420 /* Kingfisher */; };
 		C75CA9292A07E20500DA5420 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CA9282A07E20500DA5420 /* ImageView.swift */; };
 		C75CA92B2A07E63F00DA5420 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CA92A2A07E63F00DA5420 /* Constants.swift */; };
@@ -51,6 +50,7 @@
 		C7C3A1D02A00679E00E83E67 /* MoviesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDB.swift; sourceTree = "<group>"; };
 		C7C3A1D72A00700E00E83E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C7C66AD02A155BB900C47CD8 /* Trees.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Trees.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7D348792A1E742900B6ACBA /* AVLTrees.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AVLTrees.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7E00F5F2A1D39C000F50171 /* BinarySearchTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearchTree.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7E00F602A1D3D6B00F50171 /* BO-Notation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "BO-Notation.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -125,6 +125,7 @@
 				C7C66AD02A155BB900C47CD8 /* Trees.playground */,
 				C77E73452A1D26F400917400 /* BinaryTree.playground */,
 				C7E00F5F2A1D39C000F50171 /* BinarySearchTree.playground */,
+				C7D348792A1E742900B6ACBA /* AVLTrees.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
@@ -242,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C74C4F2E29BCFC77000872C8 /* Preview Assets.xcassets in Resources */,
 				C74C4F2B29BCFC77000872C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,7 +392,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftChallenges/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -427,7 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftChallenges/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
