@@ -29,7 +29,37 @@ func example(of description: String, action: () -> Void) {
 
 // AVL trees maintain balance by adjusting the structure of the tree when the tree becomes unbalanced.
 
-class AVLNode<Element> {
+protocol TraversableBinaryNode {
+    associatedtype Element
+    var value: Element { get }
+    var leftChild: Self? { get }
+    var rightChild: Self? { get }
+    func traverseInOrder(visit: (Element) -> Void)
+    func traversePreOrder(visit: (Element) -> Void)
+    func traversePostOrder(visit: (Element) -> Void)
+}
+
+extension TraversableBinaryNode {
+    func traverseInOrder(visit: (Element) -> Void) {
+        leftChild?.traverseInOrder(visit: visit)
+        visit(value)
+        rightChild?.traverseInOrder(visit: visit)
+    }
+    
+    func traversePreOrder(visit: (Element) -> Void) {
+        visit(value)
+        leftChild?.traversePreOrder(visit: visit)
+        rightChild?.traversePreOrder(visit: visit)
+    }
+    
+    func traversePostOrder(visit: (Element) -> Void) {
+        leftChild?.traversePostOrder(visit: visit)
+        rightChild?.traversePostOrder(visit: visit)
+        visit(value)
+    }
+}
+
+final class AVLNode<Element>: TraversableBinaryNode {
     var value: Element
     var leftChild: AVLNode?
     var rightChild: AVLNode?
@@ -66,27 +96,6 @@ extension AVLNode: CustomStringConvertible {
         )
     }
 }
-
-extension AVLNode {
-    func traverseInOrder(visit: (Element) -> Void) {
-        leftChild?.traverseInOrder(visit: visit)
-        visit(value)
-        rightChild?.traverseInOrder(visit: visit)
-    }
-    
-    func traversePreOrder(visit: (Element) -> Void) {
-        visit(value)
-        leftChild?.traversePreOrder(visit: visit)
-        rightChild?.traversePreOrder(visit: visit)
-    }
-    
-    func traversePostOrder(visit: (Element) -> Void) {
-        leftChild?.traversePostOrder(visit: visit)
-        rightChild?.traversePostOrder(visit: visit)
-        visit(value)
-    }
-}
-
 
 struct AVLTree<Element: Comparable> {
     private(set) var root: AVLNode<Element>?
@@ -406,3 +415,48 @@ example(of: "removing a value") {
 // - A self-balancing tree avoids performance degradation by performing a balancing procedure whenever you add or remove elements in the tree.
 // - AVL trees preserve balance by readjusting parts of the tree when the tree is no longer balanced.
 // - Balance is achieved by four types of tree rotations on node insertion and removal.
+
+
+// Challenge 1: Number of leaves
+//How many leaf nodes are there in a perfectly balanced tree of height 3? What about a perfectly balanced tree of height h?
+func leafNodes(inTreeOfHeight height: Int) -> Int {
+  Int(pow(2.0, Double(height)))
+}
+
+example(of: "number of leaf nodes") {
+    var tree = AVLTree<Int>()
+    for i in 0..<15 {
+        tree.insert(i)
+    }
+    let height = tree.root?.height ?? 1
+    print(leafNodes(inTreeOfHeight: height))
+}
+
+
+// Challenge 2: Number of nodes
+// How many nodes are there in a perfectly balanced tree of height 3? What about a perfectly balanced tree of height h?
+
+func nodes(inTreeOfHeight height: Int) -> Int {
+    Int(pow(2.0, Double(height + 1))) - 1
+}
+
+example(of: "number of nodes") {
+    var tree = AVLTree<Int>()
+    for i in 0..<15 {
+        tree.insert(i)
+    }
+    let height = tree.root?.height ?? 1
+    print(nodes(inTreeOfHeight: height))
+}
+
+
+// Challenge 3: A tree traversal protocol
+// Since there are many variants of binary trees, it makes sense to group shared functionality in a protocol. The traversal methods are a good candidate for this.
+// Create a TraversableBinaryNode protocol that provides a default implementation of the traversal methods so that conforming types get these methods for free. Have AVLNode conform to this.
+example(of: "using TraversableBinaryNode") {
+    var tree = AVLTree<Int>()
+    for i in 0..<15 {
+        tree.insert(i)
+    }
+    tree.root?.traverseInOrder { print($0) }
+}

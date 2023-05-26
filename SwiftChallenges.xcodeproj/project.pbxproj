@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C71970392A1FB24E00F498ED /* Tries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Tries.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C729E87E2A111A6B006C1357 /* Queues.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Queues.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C74C4F2329BCFC75000872C8 /* SwiftChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74C4F2629BCFC75000872C8 /* SwiftChallengesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChallengesApp.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 				C77E73452A1D26F400917400 /* BinaryTree.playground */,
 				C7E00F5F2A1D39C000F50171 /* BinarySearchTree.playground */,
 				C7D348792A1E742900B6ACBA /* AVLTrees.playground */,
+				C71970392A1FB24E00F498ED /* Tries.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
