@@ -263,7 +263,7 @@ example(of: "Space complexity") {
     }
     
     // This implementation respects space constraints. The overall goal is to iterate through the array multiple times, printing the next smallest value for each iteration.
-    //the above algorithm only allocates memory to keep track of a few variables, so the space complexity is O(1).
+    // the above algorithm only allocates memory to keep track of a few variables, so the space complexity is O(1).
     // This is in contrast with the previous function, which allocates an entire array to create the sorted representation of the source array.
     print("\nprintSorted2")
     printSorted2(numbers)
