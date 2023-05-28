@@ -91,14 +91,15 @@ example(of: "QueueArray") {
     queue.enqueue("Ray")
     queue.enqueue("Brian")
     queue.enqueue("Eric")
+    queue.enqueue("Raymon")
     
     print("Added names in queue")
     print(queue)
     print("Dequeue name in queue")
     queue.dequeue()
     print(queue)
-    print("Peek")
-    print(queue.peek)
+    print("Peek is", queue.peek)
+    print("This shows queue is first-in is first-out")
 }
 
 // Here is a summary of the algorithmic and storage complexity of the array-based queue implementation.
@@ -621,9 +622,9 @@ extension Stack: CustomStringConvertible {
 }
 
 extension Stack: ExpressibleByArrayLiteral {
-  public init(arrayLiteral elements: Element...) {
-    storage = elements
-  }
+    public init(arrayLiteral elements: Element...) {
+        storage = elements
+    }
 }
 
 // For this solution you extended QueueArray by added a reversed function.

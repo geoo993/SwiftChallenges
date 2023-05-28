@@ -46,7 +46,7 @@ struct Stack<Element> {
 }
 
 extension Stack: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: Element...) {
+    init(arrayLiteral elements: Element...) {
         storage = elements
     }
 }
@@ -62,18 +62,20 @@ extension Stack: CustomStringConvertible {
 }
 
 example(of: "using a stack") {
-  var stack = Stack<Int>()
-  stack.push(1)
-  stack.push(2)
-  stack.push(3)
-  stack.push(4)
-
-  print(stack)
-  
-  if let poppedElement = stack.pop() {
-    assert(4 == poppedElement)
-    print("Popped: \(poppedElement)")
-  }
+    var stack = Stack<Int>()
+    stack.push(1)
+    stack.push(2)
+    stack.push(3)
+    stack.push(4)
+    
+    print(stack)
+    
+    if let poppedElement = stack.pop() {
+        assert(4 == poppedElement)
+        print("Popped: \(poppedElement)")
+    }
+    print(stack)
+    print("This shows the last-in is the first-out")
 }
 
 example(of: "initializing a stack from an array") {

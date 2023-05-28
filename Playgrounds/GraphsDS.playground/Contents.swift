@@ -547,6 +547,30 @@ extension Graph where Element: Hashable {
     }
 }
 
+example(of: "Flight network of direct graph using Adjacency Matrix") {
+    let graph = AdjacencyList<String>()
+
+    let singapore = graph.createVertex(data: "Singapore")
+    let tokyo = graph.createVertex(data: "Tokyo")
+    let hongKong = graph.createVertex(data: "Hong Kong")
+    let sanFrancisco = graph.createVertex(data: "San Francisco")
+    let london = graph.createVertex(data: "London")
+    let austinTexas = graph.createVertex(data: "Austin Texas")
+
+    graph.add(.directed, from: singapore, to: hongKong, weight: nil)
+    graph.add(.directed, from: tokyo, to: singapore, weight: nil)
+    graph.add(.directed, from: singapore, to: hongKong, weight: nil)
+    graph.add(.directed, from: hongKong, to: singapore, weight: nil)
+    graph.add(.directed, from: tokyo, to: hongKong, weight: nil)
+    graph.add(.directed, from: hongKong, to: tokyo, weight: nil)
+    graph.add(.directed, from: sanFrancisco, to: hongKong, weight: nil)
+    graph.add(.directed, from: tokyo, to: london, weight: nil)
+    graph.add(.directed, from: london, to: austinTexas, weight: nil)
+    print(graph)
+    
+    print("Hong Kong paths to Texas", graph.numberOfPaths(from: hongKong, to: austinTexas))
+    print("Tokyo paths to Singapore", graph.numberOfPaths(from: tokyo, to: singapore))
+}
 
 // Challenge 2: Graph your friends
 // Vincent has three friends, Chesley, Ruiz and Patrick.
