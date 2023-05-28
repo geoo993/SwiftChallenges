@@ -53,7 +53,8 @@
 		C7BF9BC22A22AD9600BC12E1 /* MergeSortDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MergeSortDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BC32A22C34800BC12E1 /* RadixSortDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RadixSortDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BC42A238CF800BC12E1 /* HeapSortDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HeapSortDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		C7BF9BC52A23A49B00BC12E1 /* QuickSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QuickSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BC52A23A49B00BC12E1 /* QuickSortDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QuickSortDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BC62A23CE3500BC12E1 /* GraphsDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GraphsDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C3A1CD29FFF4C000E83E67 /* SCAPIClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCAPIClient; sourceTree = "<group>"; };
 		C7C3A1CF2A0063D900E83E67 /* SCDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCDomain; sourceTree = "<group>"; };
 		C7C3A1D02A00679E00E83E67 /* MoviesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDB.swift; sourceTree = "<group>"; };
@@ -143,7 +144,8 @@
 				C7BF9BC22A22AD9600BC12E1 /* MergeSortDS.playground */,
 				C7BF9BC32A22C34800BC12E1 /* RadixSortDS.playground */,
 				C7BF9BC42A238CF800BC12E1 /* HeapSortDS.playground */,
-				C7BF9BC52A23A49B00BC12E1 /* QuickSort.playground */,
+				C7BF9BC52A23A49B00BC12E1 /* QuickSortDS.playground */,
+				C7BF9BC62A23CE3500BC12E1 /* GraphsDS.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
