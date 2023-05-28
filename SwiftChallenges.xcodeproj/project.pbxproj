@@ -49,6 +49,11 @@
 		C7B2760C2A07C3B800F44092 /* Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		C7BF9BBF2A222C6700BC12E1 /* HeapDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HeapDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BC02A22786A00BC12E1 /* PriorityQueueDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PriorityQueueDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BC12A229DDF00BC12E1 /* On2SortingAlgorithmsDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = On2SortingAlgorithmsDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BC22A22AD9600BC12E1 /* MergeSortDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MergeSortDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BC32A22C34800BC12E1 /* RadixSortDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RadixSortDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BC42A238CF800BC12E1 /* HeapSortDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HeapSortDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BC52A23A49B00BC12E1 /* QuickSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QuickSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C3A1CD29FFF4C000E83E67 /* SCAPIClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCAPIClient; sourceTree = "<group>"; };
 		C7C3A1CF2A0063D900E83E67 /* SCDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCDomain; sourceTree = "<group>"; };
 		C7C3A1D02A00679E00E83E67 /* MoviesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDB.swift; sourceTree = "<group>"; };
@@ -134,6 +139,11 @@
 				C71970392A1FB24E00F498ED /* TriesDS.playground */,
 				C719703A2A20EC2900F498ED /* BinarySearchDS.playground */,
 				C7BF9BBF2A222C6700BC12E1 /* HeapDS.playground */,
+				C7BF9BC12A229DDF00BC12E1 /* On2SortingAlgorithmsDS.playground */,
+				C7BF9BC22A22AD9600BC12E1 /* MergeSortDS.playground */,
+				C7BF9BC32A22C34800BC12E1 /* RadixSortDS.playground */,
+				C7BF9BC42A238CF800BC12E1 /* HeapSortDS.playground */,
+				C7BF9BC52A23A49B00BC12E1 /* QuickSort.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";

@@ -17,8 +17,28 @@ func example(of description: String, action: () -> Void) {
 // A heap has important characteristic that must always be satisfied. This is known as the heap invariant or heap property.
 
 // - In a MAX heap, parent nodes must always contain a value that is greater than or equal to the value in its children. The root node will always contain the HIGHEST value.
+//                     10
+//                _____|_____
+//                |         |
+//                8         4
+//             ___|___   ___|___
+//            |       |  |      |
+//            7       1  2      3
+//
+//                MAX Heap
+
 
 // - In a MIN heap, parent nodes must always contain a value that is less than or equal to the value in its children. The root node will always contain the LOWEST value.
+//                     1
+//                _____|_____
+//                |         |
+//                2         4
+//             ___|___   ___|___
+//            |       |  |      |
+//            5       8  9      13
+//
+//                MIN Heap
+
 
 // Another important property of a heap is that it is a complete binary tree.
 // This means that every level must be filled, except for the last level.
@@ -103,7 +123,6 @@ extension Heap: CustomStringConvertible {
         diagram(for: self)
     }
     
-    // diagram will recursively create a string representing the binary tree.
     private func diagram(for node: Heap?) -> String {
         guard let node = node else {
             return "\(peek())nil\n"
@@ -353,4 +372,16 @@ example(of: "Min heap") {
     heap2.insert(1)
     print("Heap", heap2)
     print("is Min Heap", heap2.isMinHeap())
+    
+    //                     1
+    //                _____|_____
+    //                |         |
+    //                6         3
+    //             ___|___   ___|___
+    //            |       |  |      |
+    //            9       7 104     5
+    //
+    //                MIN Heap
+
 }
+

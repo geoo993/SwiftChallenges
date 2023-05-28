@@ -18,29 +18,29 @@ func example(of description: String, action: () -> Void) {
 // - pop: Removing the top element of the stack.
 // This means that you can only add or remove elements from one side of the data structure. In computer science, a stack is known as a LIFO (last-in first-out) data structure. Elements that are pushed in last are the first ones to be popped out.
 
-public struct Stack<Element> {
+struct Stack<Element> {
     private var storage: [Element] = []
     
-    public init() { }
+    init() { }
     
-    public init(_ elements: [Element]) {
+    init(_ elements: [Element]) {
         storage = elements
     }
     
-    public mutating func push(_ element: Element) {
+    mutating func push(_ element: Element) {
         storage.append(element)
     }
     
     @discardableResult
-    public mutating func pop() -> Element? {
+    mutating func pop() -> Element? {
         storage.popLast()
     }
     
-    public func peek() -> Element? {
+    func peek() -> Element? {
         storage.last
     }
 
-    public var isEmpty: Bool {
+    var isEmpty: Bool {
         peek() == nil
     }
 }
