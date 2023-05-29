@@ -57,6 +57,9 @@
 		C7BF9BC62A23CE3500BC12E1 /* GraphsDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GraphsDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BC72A23F25200BC12E1 /* BreadthFirstSearchDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BreadthFirstSearchDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BC82A2404BB00BC12E1 /* DepthFirstSearchDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DepthFirstSearchDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BC92A24C84000BC12E1 /* DijkstrasAlgorithmDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DijkstrasAlgorithmDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BCA2A24E3FB00BC12E1 /* PrimsAlgorithmDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrimsAlgorithmDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BF9BCB2A25045800BC12E1 /* MiniMax.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MiniMax.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C3A1CD29FFF4C000E83E67 /* SCAPIClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCAPIClient; sourceTree = "<group>"; };
 		C7C3A1CF2A0063D900E83E67 /* SCDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCDomain; sourceTree = "<group>"; };
 		C7C3A1D02A00679E00E83E67 /* MoviesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDB.swift; sourceTree = "<group>"; };
@@ -150,6 +153,9 @@
 				C7BF9BC62A23CE3500BC12E1 /* GraphsDS.playground */,
 				C7BF9BC72A23F25200BC12E1 /* BreadthFirstSearchDS.playground */,
 				C7BF9BC82A2404BB00BC12E1 /* DepthFirstSearchDS.playground */,
+				C7BF9BC92A24C84000BC12E1 /* DijkstrasAlgorithmDS.playground */,
+				C7BF9BCA2A24E3FB00BC12E1 /* PrimsAlgorithmDS.playground */,
+				C7BF9BCB2A25045800BC12E1 /* MiniMax.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";

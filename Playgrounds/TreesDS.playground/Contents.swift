@@ -117,7 +117,7 @@ example(of: "depth-first traversal") {
     tree.forEachDepthFirst { print($0.value) }
 }
 
-public protocol Queue {
+protocol Queue {
     associatedtype Element
     mutating func enqueue(_ element: Element)
     mutating func dequeue() -> Element?
@@ -160,7 +160,6 @@ extension TreeNode {
             node.children.forEach { queue.enqueue($0) }
         }
     }
-    
 }
 
 example(of: "level-order traversal") {
@@ -216,7 +215,7 @@ func makeNumberTree() -> TreeNode<Int> {
     let second2 = TreeNode(17)
     let second3 = TreeNode(20)
     
-    let second1A = TreeNode(1)
+    let second1A = TreeNode(11)
     let second1B = TreeNode(5)
     let second1C = TreeNode(0)
     
@@ -249,28 +248,27 @@ func makeNumberTree() -> TreeNode<Int> {
 extension TreeNode {
     // This algorithm has a time complexity of O(n). Since you initialize the Queue data structure as an intermediary container, this algorithm also uses O(n) space.
     func printTreelevel() {
-      // 1 - You begin by initializing a Queue data structure
-      var queue = QueueArray<TreeNode<T>>()
-      var nodesLeftInCurrentLevel = 0
-      queue.enqueue(self)
-      
-      // 2 - Your level-order traversal continues until your queue is empty.
-      while !queue.isEmpty {
-      
-        // 3 - Inside the first while loop, you begin by setting nodesLeftInCurrentLevel to the current elements in the queue.
-        nodesLeftInCurrentLevel = queue.count
+        // 1 - You begin by initializing a Queue data structure
+        var queue = QueueArray<TreeNode<T>>()
+        var nodesLeftInCurrentLevel = 0
+        queue.enqueue(self)
         
-        // 4 - Using another while loop, you dequeue the first nodesLeftInCurrentLevel number of elements from the queue. Every element you dequeue is printed out without establishing a new line. You also enqueue all the children of the node.
-        while nodesLeftInCurrentLevel > 0 {
-            guard let node = queue.dequeue() else { break }
-            print("\(node.value) ", terminator: "")
-            node.children.forEach { queue.enqueue($0) }
-            nodesLeftInCurrentLevel -= 1
+        // 2 - Your level-order traversal continues until your queue is empty.
+        while !queue.isEmpty {
+            // 3 - Inside the first while loop, you begin by setting nodesLeftInCurrentLevel to the current elements in the queue.
+            nodesLeftInCurrentLevel = queue.count
+            
+            // 4 - Using another while loop, you dequeue the first nodesLeftInCurrentLevel number of elements from the queue. Every element you dequeue is printed out without establishing a new line. You also enqueue all the children of the node.
+            while nodesLeftInCurrentLevel > 0 {
+                guard let node = queue.dequeue() else { break }
+                print("\(node.value) ", terminator: "")
+                node.children.forEach { queue.enqueue($0) }
+                nodesLeftInCurrentLevel -= 1
+            }
+            
+            // 5
+            print()
         }
-        
-        // 5
-        print()
-      }
     }
 }
 
