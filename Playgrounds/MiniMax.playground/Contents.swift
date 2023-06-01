@@ -1,134 +1,8 @@
 import Foundation
 
-// https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/
-
 func example(of description: String, action: () -> Void) {
   print("\n--- Example of:", description, "---")
   action()
-}
-
-// Returns the optimal value a maximizer can obtain.
-// depth is current depth in game tree.
-// nodeIndex is index of current node in scores[].
-// isMax is true if current move is
-// of maximizer, else false
-// scores[] stores leaves of Game tree.
-// h is maximum height of Game tree
-func minimax(
-    _ depth: Int,
-    _ nodeIndex: Int,
-    _ isMax: Bool,
-    _ scores: inout [Int],
-    _ h: Int
-) -> Int {
-    // Terminating condition. i.e leaf node is reached
-    if depth == h {
-        return scores[nodeIndex]
-    }
- 
-    // use tree
-    
-    // If current move is maximizer,
-    // find the maximum attainable value
-    if isMax {
-        return max(
-            minimax(depth + 1, nodeIndex * 2, false, &scores, h),
-            minimax(depth + 1, nodeIndex * 2 + 1, false, &scores, h)
-        )
-    }
- 
-    // Else (If current move is Minimizer), find the minimum attainable value
-    else {
-        return min(
-            minimax(depth + 1, nodeIndex * 2, true, &scores, h),
-            minimax(depth + 1, nodeIndex * 2 + 1, true, &scores, h)
-        )
-    }
-}
-
-// A utility function to find Log n in base 2
-func log2(_ n: Int) -> Int {
-    (n==1) ? 0 : 1 + log2(n/2)
-}
-
-example(of: "Min max optimal value") {
-    var scores = [3, 5, 2, 9, 12, 5, 23, 8, 16, 25, 14, 99]
-    //
-    // Max                    [25]
-    //
-    // Min           [5]               [12]                     [25]
-    //
-    // Max      [5]      [9]      [12]       [23]         [25]        [99]
-    //
-    // Min    [3] [5]  [2] [9]  [12] [5]   [23] [8]    [16] [25]   [14] [99]
-    
-    let n = scores.count
-    let log2n = log2(n)
-    let result = minimax(0, 0, true, &scores, log2n)
-    print("n: \(n)\nh: \(log2n)")
-    print("The optimal value is: \(result)")
-}
-
-// Time complexity : O(b^d) b is the branching factor and d is count of depth or ply of graph or tree.
-// Space Complexity : O(bd) where b is branching factor into d is maximum depth of tree similar to DFS.
-
-// In the above example, there are only two choices for a player.
-// In general, there can be more choices. In that case, we need to recur for all possible moves and find the maximum/minimum. For example, in Tic-Tac-Toe, the first player can make 9 possible moves.
-// In the above example, the scores (leaves of Game Tree) are given to us.
-// For a typical game, we need to derive these values
-
-
-enum MinMaxType {
-    case none
-    case value(Int)
-}
-
-extension MinMaxType: CustomStringConvertible {
-    var description: String {
-        switch self {
-        case let .value(result):
-            return "\(result)"
-        default: return "none"
-        }
-    }
-}
-
-class TreeNode {
-    weak var parent: TreeNode?
-    var value: MinMaxType
-    var children: [TreeNode] = []
-    
-    init(_ value: MinMaxType) {
-        self.value = value
-    }
-    
-    func add(_ child: TreeNode) {
-        children.append(child)
-    }
-}
-
-extension TreeNode: Comparable {
-    static func < (lhs: TreeNode, rhs: TreeNode) -> Bool {
-        switch (lhs.value, rhs.value) {
-        case let (.value(result1), .value(result2)):
-            return result1 < result2
-        default: return false
-        }
-    }
-    
-    static func == (lhs: TreeNode, rhs: TreeNode) -> Bool {
-        switch (lhs.value, rhs.value) {
-        case let (.value(result1), .value(result2)):
-            return result1 == result2
-        default: return false
-        }
-    }
-}
-
-extension TreeNode: CustomStringConvertible {
-    var description: String {
-        value.description
-    }
 }
 
 protocol Queue {
@@ -282,120 +156,153 @@ struct PriorityQueue<Element: Comparable>: Queue {
         heap.insert(element)
         return true
     }
-    
+
     mutating func dequeue() -> Element? {
         heap.remove()
     }
 }
 
-extension PriorityQueue: CustomStringConvertible {
-    var description: String {
-        diagram(for: self)
+class TreeNode<T: Comparable> {
+    var value: T?
+    var children: [TreeNode] = []
+
+    init(_ value: T? = nil) {
+        self.value = value
     }
     
-    private func diagram(for queue: PriorityQueue?) -> String {
-        guard let queue = queue else {
-            return "nil\n"
-        }
-        return "\(queue.heap.elements)"
+    // This method adds a child node to a node.
+    func add(_ child: TreeNode) {
+        children.append(child)
     }
 }
 
-/*
-func printTreelevel() {
-    // 1 - You begin by initializing a Queue data structure
-    var queue = QueueArray<TreeNode<T>>()
-    var nodesLeftInCurrentLevel = 0
-    queue.enqueue(self)
-    
-    // 2 - Your level-order traversal continues until your queue is empty.
-    while !queue.isEmpty {
-        // 3 - Inside the first while loop, you begin by setting nodesLeftInCurrentLevel to the current elements in the queue.
-        nodesLeftInCurrentLevel = queue.count
-        
-        // 4 - Using another while loop, you dequeue the first nodesLeftInCurrentLevel number of elements from the queue. Every element you dequeue is printed out without establishing a new line. You also enqueue all the children of the node.
-        while nodesLeftInCurrentLevel > 0 {
-            guard let node = queue.dequeue() else { break }
-            print("\(node.value) ", terminator: "")
-            node.children.forEach { queue.enqueue($0) }
-            nodesLeftInCurrentLevel -= 1
+extension TreeNode: Comparable where T: Comparable {
+    static func < (lhs: TreeNode<T>, rhs: TreeNode<T>) -> Bool {
+        switch (lhs.value, rhs.value) {
+        case let (.some(result1), .some(result2)):
+            return result1 < result2
+        default: return false
         }
-        
-        // 5
-        print()
     }
 }
- */
-func miniMax(tree: TreeNode, isMax: Bool) {
-    let childrens = tree.children
-    var queue = isMax ? PriorityQueue(sort: >, elements: childrens) : PriorityQueue(sort: <, elements: childrens)
-    var nodesLeftInCurrentLevel = 0
+
+extension TreeNode: Equatable where T: Equatable {
+    static func == (lhs: TreeNode<T>, rhs: TreeNode<T>) -> Bool {
+        switch (lhs.value, rhs.value) {
+        case let (.some(result1), .some(result2)):
+            return result1 == result2 && lhs.children == rhs.children
+        default: return false
+        }
+    }
+}
+
+// Minimax algorithm implementation
+func minimax(node: TreeNode<Int>, isMaximizing: Bool) -> Int {
+    if node.children.isEmpty {
+        return node.value ?? 0
+    }
     
-    if tree.children.isEmpty {
+    if isMaximizing {
+        var bestValue = Int.min
+        let priorityQueue = PriorityQueue(sort: >, elements: node.children)
+        if let value = priorityQueue.peek?.value {
+            bestValue = value
+        } else {
+            for child in node.children {
+                let value = minimax(node: child, isMaximizing: false)
+                bestValue = max(bestValue, value)
+            }
+        }
+        node.value = bestValue
+        return bestValue
+    } else {
+        var bestValue = Int.max
+        let priorityQueue = PriorityQueue(sort: <, elements: node.children)
+        if let value = priorityQueue.peek?.value {
+            bestValue = value
+        } else {
+            for child in node.children {
+                let value = minimax(node: child, isMaximizing: true)
+                bestValue = min(bestValue, value)
+            }
+        }
+        node.value = bestValue
+        return bestValue
+    }
+}
+
+func printAll(from node: TreeNode<Int>) {
+    if node.children.isEmpty {
         return
     }
     
-    if isMax {
-        tree.children.forEach { queue.enqueue($0) }
-    } else {
-        tree.children.forEach { queue.enqueue($0) }
-    }
-    print(queue)
+    print()
+    print(node.children.map{ $0.value })
+    node.children.forEach(printAll)
 }
 
+example(of: "Mini max") {
+    let bottom1 = TreeNode(3)
+    let bottom2 = TreeNode(5)
+    let bottom3 = TreeNode(2)
+    let bottom4 = TreeNode(9)
+    let bottom5 = TreeNode(12)
+    let bottom6 = TreeNode(5)
+    let bottom7 = TreeNode(23)
+    let bottom8 = TreeNode(8)
+    let bottom9 = TreeNode(16)
+    let bottom10 = TreeNode(25)
+    let bottom11 = TreeNode(14)
+    let bottom12 = TreeNode(99)
+    
+    // row 3
+    let row31: TreeNode<Int>  = TreeNode()
+    let row32: TreeNode<Int>  = TreeNode()
+    let row33: TreeNode<Int>  = TreeNode()
+    let row34: TreeNode<Int>  = TreeNode()
+    let row35: TreeNode<Int>  = TreeNode()
+    let row36: TreeNode<Int>  = TreeNode()
+    row31.add(bottom1)
+    row31.add(bottom2)
+    row32.add(bottom3)
+    row32.add(bottom4)
+    row33.add(bottom5)
+    row33.add(bottom6)
+    row34.add(bottom7)
+    row34.add(bottom8)
+    row35.add(bottom9)
+    row35.add(bottom10)
+    row36.add(bottom11)
+    row36.add(bottom12)
+    
+    // row 2
+    let row21: TreeNode<Int>  = TreeNode()
+    let row22: TreeNode<Int>  = TreeNode()
+    let row23: TreeNode<Int>  = TreeNode()
+    row21.add(row31)
+    row21.add(row32)
+    row22.add(row33)
+    row22.add(row34)
+    row23.add(row35)
+    row23.add(row36)
+    
+    // Create a sample tree
+    let rootNode: TreeNode<Int>  = TreeNode()
+    rootNode.add(row21)
+    rootNode.add(row22)
+    rootNode.add(row23)
+    
+    // Test the minimax algorithm
+    let result = minimax(node: rootNode, isMaximizing: true)
+    print("Optimal value: \(result)")
 
-func makeMinimaxTree() -> TreeNode {
-    let tree = TreeNode(MinMaxType.none)
-    
-    let lastLevel1 = TreeNode(MinMaxType.value(1))
-    let lastLevel2 = TreeNode(MinMaxType.value(17))
-    let lastLevel3 = TreeNode(MinMaxType.value(20))
-    let lastLevel4 = TreeNode(MinMaxType.value(11))
-    let lastLevel5 = TreeNode(MinMaxType.value(5))
-    let lastLevel6 = TreeNode(MinMaxType.value(0))
-    let lastLevel7 = TreeNode(MinMaxType.value(2))
-    let lastLevel8 = TreeNode(MinMaxType.value(9))
-    let lastLevel9 = TreeNode(MinMaxType.value(8))
-    let lastLevel10 = TreeNode(MinMaxType.value(3))
-    let lastLevel11 = TreeNode(MinMaxType.value(43))
-    
-    let level2A = TreeNode(MinMaxType.none)
-    level2A.add(lastLevel1)
-    level2A.add(lastLevel2)
-    let level2B = TreeNode(MinMaxType.none)
-    level2B.add(lastLevel3)
-    level2B.add(lastLevel4)
-    let level2C = TreeNode(MinMaxType.none)
-    level2C.add(lastLevel5)
-    level2C.add(lastLevel6)
-    let level2D = TreeNode(MinMaxType.none)
-    level2D.add(lastLevel7)
-    level2D.add(lastLevel8)
-    let level2E = TreeNode(MinMaxType.none)
-    level2E.add(lastLevel9)
-    let level2F = TreeNode(MinMaxType.none)
-    level2F.add(lastLevel10)
-    level2F.add(lastLevel11)
-    
-    
-    let level1A = TreeNode(MinMaxType.none)
-    level1A.add(level2A)
-    level1A.add(level2B)
-    let level1B = TreeNode(MinMaxType.none)
-    level1B.add(level2C)
-    level1B.add(level2D)
-    let level1C = TreeNode(MinMaxType.none)
-    level1C.add(level2E)
-    level1C.add(level2F)
-    
-    tree.add(level1A)
-    tree.add(level1B)
-    tree.add(level1C)
-    
-    return tree
-}
-
-example(of: "Minimax in each level order") {
-    let makeTree = makeMinimaxTree()
-    miniMax(tree: makeTree, isMax: true)
+    //
+    // Max                             [25]
+    //
+    // Min           [5]               [12]                     [25]
+    //
+    // Max      [5]      [9]      [12]       [23]         [25]        [99]
+    //
+    // Min    [3] [5]  [2] [9]  [12] [5]   [23] [8]    [16] [25]   [14] [99]
+    printAll(from: rootNode)
 }

@@ -246,7 +246,7 @@ example(of: "insertion sort BidirectionalCollection and MutableCollection") {
 }
 
 // Key points
-// - n² algorithms often have a bad reputation, but some of these algorithms usually have some redeeming points. insertionSort can sort in O(n) time if the collection is already in sorted order and gradually scales down to O(n²).
+// - 0n² algorithms often have a bad reputation, but some of these algorithms usually have some redeeming points. insertionSort can sort in O(n) time if the collection is already in sorted order and gradually scales down to O(n²).
 // - insertionSort is one of the best sorts in situations wherein you know, ahead of time, that your data is mostly in a sorted order.
 
 // Challenge 1: Group elements

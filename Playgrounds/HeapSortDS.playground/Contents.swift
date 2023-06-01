@@ -5,7 +5,7 @@ func example(of description: String, action: () -> Void) {
   action()
 }
 
-// Heapsort is another comparison-based algorithm that sorts an array in ascending order using a heap.
+// Heap sort is another comparison-based algorithm that sorts an array in ascending order using a heap.
 // It builds “The Heap Data Structure.”
 
 // Heapsort takes advantage of a heap being, by definition, a partially sorted binary tree with the following qualities:
