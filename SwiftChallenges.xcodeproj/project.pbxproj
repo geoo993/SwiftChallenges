@@ -40,6 +40,15 @@
 		C76A18AC2A103CCA00D11B62 /* LinkedListAndCollectionDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedListAndCollectionDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C76A18AD2A103CE300D11B62 /* DataRace.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DataRace.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C77E73452A1D26F400917400 /* BinaryTreeDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinaryTreeDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7AF2AF32A2CB439005F638B /* MVCPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MVCPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7AF2AF42A2CB6FD005F638B /* StoredAndComputedProperties.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StoredAndComputedProperties.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7AF2AF52A2CBE5D005F638B /* DelegationPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DelegationPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7AF2AF62A2CEF5E005F638B /* StrategyPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StrategyPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7AF2AF72A2D2C2E005F638B /* SingletonPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SingletonPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7AF2AF82A2D3046005F638B /* MementoPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MementoPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7AF2AF92A2D3807005F638B /* ObserverPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ObserverPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7AF2AFA2A2D3B2D005F638B /* BuilderPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BuilderPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7AF2AFB2A2D3F8A005F638B /* MVVMPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MVVMPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7B275F52A068CE600F44092 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		C7B275FA2A0701BA00F44092 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		C7B275FD2A07125200F44092 /* Paginated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginated.swift; sourceTree = "<group>"; };
@@ -47,6 +56,7 @@
 		C7B276022A071BCE00F44092 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
 		C7B2760A2A07C38800F44092 /* ScrollViewDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDetector.swift; sourceTree = "<group>"; };
 		C7B2760C2A07C3B800F44092 /* Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
+		C7B338932A294E9E00F3AA47 /* DesignPatterns.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DesignPatterns.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BBF2A222C6700BC12E1 /* HeapDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HeapDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BC02A22786A00BC12E1 /* PriorityQueueDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PriorityQueueDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BC12A229DDF00BC12E1 /* On2SortingAlgorithmsDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = On2SortingAlgorithmsDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -156,6 +166,16 @@
 				C7BF9BC92A24C84000BC12E1 /* DijkstrasAlgorithmDS.playground */,
 				C7BF9BCA2A24E3FB00BC12E1 /* PrimsAlgorithmDS.playground */,
 				C7BF9BCB2A25045800BC12E1 /* MiniMax.playground */,
+				C7B338932A294E9E00F3AA47 /* DesignPatterns.playground */,
+				C7AF2AF32A2CB439005F638B /* MVCPattern.playground */,
+				C7AF2AF42A2CB6FD005F638B /* StoredAndComputedProperties.playground */,
+				C7AF2AF52A2CBE5D005F638B /* DelegationPattern.playground */,
+				C7AF2AF62A2CEF5E005F638B /* StrategyPattern.playground */,
+				C7AF2AF72A2D2C2E005F638B /* SingletonPattern.playground */,
+				C7AF2AF82A2D3046005F638B /* MementoPattern.playground */,
+				C7AF2AF92A2D3807005F638B /* ObserverPattern.playground */,
+				C7AF2AFA2A2D3B2D005F638B /* BuilderPattern.playground */,
+				C7AF2AFB2A2D3F8A005F638B /* MVVMPattern.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";

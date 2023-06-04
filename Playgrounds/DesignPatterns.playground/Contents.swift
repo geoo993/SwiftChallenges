@@ -6,6 +6,43 @@ func example(of description: String, action: () -> Void) {
   action()
 }
 
+// =========
+// Software design patterns form a set of best practices in development.
+// Most design patterns have been around for a long time, having started life in the 1970s and 1980s — and they continue to work well to this day.
+// This longevity is partly due to the fact their use has been validated in many projects over the decades, but it’s also because they aren’t concrete solutions.
+// Design patterns are generic, go-to solutions for solving common problems.
+
+// There are three main types of design patterns:
+// - Structural design pattern: Describes how objects are composed and combined to form larger structures. Examples of structural design patterns include Model-View-Controller (MVC), Model-View-ViewModel (MVVM) and Facade.
+// - Behavioral design pattern: Describes how objects communicate with each other. Examples of behavioral design patterns are Delegation, Strategy and Observer.
+// - Creational design pattern: Describes how to create or instantiate objects. Examples of creational patterns are Builder, Singleton and Prototype.
+
+// ==========
+// There are dozens of design patterns, so knowing when and how to employ each one is important.
+// What are some common criticisms of design patterns?
+// 1) If you overuse design patterns, your project can become overly complex. ou need to be careful about overusing any tool, including design patterns. You can minimize this issue by clearly and correctly defining the problem to be solved before adding a design pattern to your project.
+
+// 2) Many design patterns are made redundant by modern programming languages.
+// It’s true that modern programming languages like Swift make some design patterns irrelevant or trivial to implement. However, just because some patterns are provided via a programming language doesn’t mean all patterns will be.
+
+// 3) Design patterns are a lazy substitute for learning object-oriented principles.
+// Why not learn both? A strong understanding of object-oriented principles will certainly help you in your development. However, if you already know a design pattern works well for a particular problem, why should you reinvent the solution from scratch?
+
+// 4) Are design pattern worthless? Regardless of the particular criticism, design patterns have been around for a long time, and they’ve been used in many apps. So at some point, you’re going to encounter them.
+
+// ===========
+// Benefits of design patterns
+// 1) Design patterns create a common language.
+// Instead of describing a particular solution in detail, you can simply state which design pattern you think would work best. This streamlines communication between developers.
+
+// 2) Design patterns fast-track developer onboarding.
+// It’s much easier to onboard a new developer on a project that uses design patterns, than on a project with completely custom logic.
+
+// 3) Design patterns make you a better person.
+// Well, this one may still be up for debate. But some degree of self-improvement is never wasted! However, there is a grain of truth to this, as the next developer to maintain your project will certainly think you’re a better person for having left them a nice, design-pattern-filled project instead of a spaghetti-coded mess!
+
+// 4) Knowing design patterns allow you to spot similarities between code.
+// Once you know and understand different design patterns, you begin to notice their use in code. This gives you a leg up as you are at least a little familiar with how to use that code. For example, iOS and Mac programming makes heavy use of the Delegation pattern. You would spot this pattern easily if you ever moved to another platform that also uses Delegation and instantly be familiar with how the code is organized.
 
 //- Singleton
 
