@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='PostComments'/>
+        <page name='BO-Notation'/>
+        <page name='DesignPatterns'/>
+        <page name='Polymorphism'/>
+    </pages>
+</playground>
