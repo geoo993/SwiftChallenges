@@ -79,6 +79,14 @@
 		C7B2760A2A07C38800F44092 /* ScrollViewDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDetector.swift; sourceTree = "<group>"; };
 		C7B2760C2A07C3B800F44092 /* Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		C7B338932A294E9E00F3AA47 /* DesignPatterns.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DesignPatterns.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BB78B32A2E7783009745CD /* FilterReduceMap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilterReduceMap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BB78B42A2E77FF009745CD /* GridLayout.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GridLayout.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BB78B52A2E7A2D009745CD /* Measurement.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Measurement.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BB78B62A2E7AF6009745CD /* BodyMassIndex.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BodyMassIndex.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BB78B72A2E7B6C009745CD /* BeerSong.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BeerSong.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BB78B82A2E7C54009745CD /* FibonacciSequence.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FibonacciSequence.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BB78B92A2E8464009745CD /* FactoryPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FactoryPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7BB78BA2A2E8B86009745CD /* AdapterPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AdapterPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BBF2A222C6700BC12E1 /* HeapDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HeapDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BC02A22786A00BC12E1 /* PriorityQueueDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PriorityQueueDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BC12A229DDF00BC12E1 /* On2SortingAlgorithmsDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = On2SortingAlgorithmsDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -183,6 +191,12 @@
 				C74C63E62A2D4B7500AA8F83 /* AsyncAwait.playground */,
 				C74C63E82A2D4CBC00AA8F83 /* Regexs.playground */,
 				C74C63E92A2D4CDB00AA8F83 /* SwiftStyleGuide.playground */,
+				C7BB78B32A2E7783009745CD /* FilterReduceMap.playground */,
+				C7BB78B42A2E77FF009745CD /* GridLayout.playground */,
+				C7BB78B52A2E7A2D009745CD /* Measurement.playground */,
+				C7BB78B62A2E7AF6009745CD /* BodyMassIndex.playground */,
+				C7BB78B72A2E7B6C009745CD /* BeerSong.playground */,
+				C7BB78B82A2E7C54009745CD /* FibonacciSequence.playground */,
 				C74C63EA2A2D4D0100AA8F83 /* Whats New in Swift 5.7.playground */,
 				C74C63EB2A2D4E0800AA8F83 /* Whats New in Swift 5.9.playground */,
 				C7E00F602A1D3D6B00F50171 /* BO-Notation.playground */,
@@ -220,6 +234,8 @@
 				C7AF2AFA2A2D3B2D005F638B /* BuilderPattern.playground */,
 				C7AF2AFB2A2D3F8A005F638B /* MVVMPattern.playground */,
 				C74C63DC2A2D489100AA8F83 /* RepositoryPattern.playground */,
+				C7BB78B92A2E8464009745CD /* FactoryPattern.playground */,
+				C7BB78BA2A2E8B86009745CD /* AdapterPattern.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
