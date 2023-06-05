@@ -28,6 +28,7 @@
 /* Begin PBXFileReference section */
 		C71970392A1FB24E00F498ED /* TriesDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TriesDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C719703A2A20EC2900F498ED /* BinarySearchDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearchDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C726B6AF2A2D536C00DC15D0 /* Beziers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Beziers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C729E87E2A111A6B006C1357 /* QueuesDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QueuesDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C74C4F2329BCFC75000872C8 /* SwiftChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74C4F2629BCFC75000872C8 /* SwiftChallengesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChallengesApp.swift; sourceTree = "<group>"; };
@@ -162,6 +163,7 @@
 		C74C4F3629BCFE66000872C8 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				C726B6AF2A2D536C00DC15D0 /* Beziers.playground */,
 				C7AF2AFC2A2D456E005F638B /* ClassAndStructs.playground */,
 				C7AF2AFD2A2D45A3005F638B /* ArrayAndDictionary.playground */,
 				C7AF2AFE2A2D45DF005F638B /* LazyKeyword.playground */,
