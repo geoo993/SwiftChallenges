@@ -101,6 +101,11 @@
 		C7BF9BC92A24C84000BC12E1 /* DijkstrasAlgorithmDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DijkstrasAlgorithmDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BCA2A24E3FB00BC12E1 /* PrimsAlgorithmDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrimsAlgorithmDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BF9BCB2A25045800BC12E1 /* MiniMax.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MiniMax.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3B22A3101AA00617B2F /* IteratorPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IteratorPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3B32A31063600617B2F /* PrototypePattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrototypePattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3B42A310C7000617B2F /* StatePattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StatePattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3BA2A31188200617B2F /* MulticastDelegatePattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MulticastDelegatePattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3BB2A311D8B00617B2F /* FacadePattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FacadePattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C3A1CD29FFF4C000E83E67 /* SCAPIClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCAPIClient; sourceTree = "<group>"; };
 		C7C3A1CF2A0063D900E83E67 /* SCDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCDomain; sourceTree = "<group>"; };
 		C7C3A1D02A00679E00E83E67 /* MoviesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDB.swift; sourceTree = "<group>"; };
@@ -238,6 +243,11 @@
 				C74C63DC2A2D489100AA8F83 /* RepositoryPattern.playground */,
 				C7BB78B92A2E8464009745CD /* FactoryPattern.playground */,
 				C7BB78BA2A2E8B86009745CD /* AdapterPattern.playground */,
+				C7C0F3B22A3101AA00617B2F /* IteratorPattern.playground */,
+				C7C0F3B32A31063600617B2F /* PrototypePattern.playground */,
+				C7C0F3B42A310C7000617B2F /* StatePattern.playground */,
+				C7C0F3BA2A31188200617B2F /* MulticastDelegatePattern.playground */,
+				C7C0F3BB2A311D8B00617B2F /* FacadePattern.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
