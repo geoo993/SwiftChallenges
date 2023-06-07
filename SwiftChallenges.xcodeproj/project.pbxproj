@@ -57,6 +57,7 @@
 		C76A18AC2A103CCA00D11B62 /* LinkedListAndCollectionDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedListAndCollectionDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C76A18AD2A103CE300D11B62 /* DataRace.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DataRace.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C77E73452A1D26F400917400 /* BinaryTreeDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinaryTreeDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C78855B02A30BFB2007149D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C7AF2AF32A2CB439005F638B /* MVCPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MVCPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7AF2AF42A2CB6FD005F638B /* StoredAndComputedProperties.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StoredAndComputedProperties.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7AF2AF52A2CBE5D005F638B /* DelegationPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DelegationPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -148,6 +149,7 @@
 		C74C4F2529BCFC75000872C8 /* SwiftChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				C78855B02A30BFB2007149D9 /* README.md */,
 				C7C3A1D72A00700E00E83E67 /* Info.plist */,
 				C7B275FF2A071B8000F44092 /* Utilities */,
 				C7B275FC2A07123C00F44092 /* Pagination */,

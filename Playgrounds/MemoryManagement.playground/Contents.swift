@@ -198,3 +198,95 @@ example(of: "Weak and strong references") {
     denis = nil
     tech = nil
 }
+
+example(of: "Weak self") {
+    
+    class Tech {
+        var model: String
+            
+        init(model: String) {
+            self.model = model
+            print("\n\(model) is being initialized")
+        }
+        
+        var owner: Person?
+
+        deinit {
+            print("\(model) is being deinitialized")
+        }
+    }
+    
+    class Person {
+        var name: String
+        let gadget: Gadget
+        var tech: Tech?
+        
+        init(name: String, gadget: Gadget) {
+            self.name = name
+            self.gadget = gadget
+            print("\(name) is being initialized")
+        }
+        
+        func runGadget() {
+            gadget.doSomeStuff() { [weak self] tech in
+                var myName = self?.name
+                DispatchQueue.main.sync {
+                    self?.tech = tech
+                    self?.tech?.owner = self
+                    self?.name = "Apple Genious"
+                }
+                myName = self?.name
+                print(myName)
+            }
+        }
+
+        deinit {
+            print("\(name) is being deinitialized")
+        }
+    }
+     
+    class Gadget {
+        var model: String
+        var tech: Tech?
+        var someStuff: ((Tech) -> Void)?
+        var owner: Person?
+        
+        init(model: String, tech: Tech?) {
+            self.model = model
+            self.tech = tech
+            print("\(model) is being initialized")
+        }
+        
+        func doSomeStuff(completion: @escaping ((Tech) -> Void)) {
+            print("Awesome gadget")
+            someStuff = { [weak self] tech in
+                self?.tech = tech
+                completion(tech)
+                print("Published tech was added")
+            }
+        }
+        
+        func publish(stuff tech: Tech) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.someStuff?(tech)
+            }
+        }
+    
+        deinit {
+            print("\(model) is being deinitialized")
+        }
+    }
+    
+    var iphone: Gadget?
+    var kelvin: Person?
+    var tech: Tech?
+    tech = Tech(model: "my Tech")
+    iphone = Gadget(model: "iPhone 8 Plus", tech: tech)
+    kelvin = Person(name: "Kelvin", gadget: iphone!)
+
+    kelvin?.runGadget()
+    
+    iphone = nil
+    kelvin = nil
+    tech = nil
+}
