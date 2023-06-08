@@ -106,6 +106,12 @@
 		C7C0F3B42A310C7000617B2F /* StatePattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StatePattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C0F3BA2A31188200617B2F /* MulticastDelegatePattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MulticastDelegatePattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C0F3BB2A311D8B00617B2F /* FacadePattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FacadePattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3BC2A313E8300617B2F /* FlyweightPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FlyweightPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3BD2A32014000617B2F /* MediatorPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MediatorPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3BE2A32228F00617B2F /* CompositePattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CompositePattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3BF2A322B4300617B2F /* CommandPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CommandPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3C02A32306C00617B2F /* ChainofResponsibilityPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ChainofResponsibilityPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3C12A32689800617B2F /* CoordinatorPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CoordinatorPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C3A1CD29FFF4C000E83E67 /* SCAPIClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCAPIClient; sourceTree = "<group>"; };
 		C7C3A1CF2A0063D900E83E67 /* SCDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCDomain; sourceTree = "<group>"; };
 		C7C3A1D02A00679E00E83E67 /* MoviesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDB.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 				C74C63DE2A2D48FC00AA8F83 /* PriorityEngineGroupedByRank.playground */,
 				C74C63DF2A2D492500AA8F83 /* CombineOperators.playground */,
 				C74C63E02A2D49B500AA8F83 /* Closures.playground */,
+				C76A18AD2A103CE300D11B62 /* DataRace.playground */,
 				C74C63E12A2D4ADB00AA8F83 /* MemoryManagement.playground */,
 				C74C63E22A2D4B1000AA8F83 /* OpaqueType.playground */,
 				C74C63E32A2D4B1F00AA8F83 /* TypeErasures.playground */,
@@ -209,7 +216,6 @@
 				C7E00F602A1D3D6B00F50171 /* BO-Notation.playground */,
 				C76A18AB2A103CB900D11B62 /* StacksDS.playground */,
 				C76A18AC2A103CCA00D11B62 /* LinkedListAndCollectionDS.playground */,
-				C76A18AD2A103CE300D11B62 /* DataRace.playground */,
 				C729E87E2A111A6B006C1357 /* QueuesDS.playground */,
 				C7BF9BC02A22786A00BC12E1 /* PriorityQueueDS.playground */,
 				C7C66AD02A155BB900C47CD8 /* TreesDS.playground */,
@@ -248,6 +254,12 @@
 				C7C0F3B42A310C7000617B2F /* StatePattern.playground */,
 				C7C0F3BA2A31188200617B2F /* MulticastDelegatePattern.playground */,
 				C7C0F3BB2A311D8B00617B2F /* FacadePattern.playground */,
+				C7C0F3BC2A313E8300617B2F /* FlyweightPattern.playground */,
+				C7C0F3BD2A32014000617B2F /* MediatorPattern.playground */,
+				C7C0F3BE2A32228F00617B2F /* CompositePattern.playground */,
+				C7C0F3BF2A322B4300617B2F /* CommandPattern.playground */,
+				C7C0F3C02A32306C00617B2F /* ChainofResponsibilityPattern.playground */,
+				C7C0F3C12A32689800617B2F /* CoordinatorPattern.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
