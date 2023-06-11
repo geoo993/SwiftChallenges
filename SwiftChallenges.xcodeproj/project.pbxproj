@@ -58,6 +58,10 @@
 		C76A18AD2A103CE300D11B62 /* DataRace.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DataRace.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C77E73452A1D26F400917400 /* BinaryTreeDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinaryTreeDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C78855B02A30BFB2007149D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		C7A6A29A2A34A6D80036E115 /* FindingAnArchitecture.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FindingAnArchitecture.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7A6A29B2A34C5880036E115 /* MVVMArchitecture.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MVVMArchitecture.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7A6A29C2A34E3810036E115 /* ObjectsAndTheirDependencies.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ObjectsAndTheirDependencies.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7A6A29D2A36276C0036E115 /* ReduxArchitecture.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ReduxArchitecture.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7AF2AF32A2CB439005F638B /* MVCPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MVCPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7AF2AF42A2CB6FD005F638B /* StoredAndComputedProperties.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StoredAndComputedProperties.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7AF2AF52A2CBE5D005F638B /* DelegationPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DelegationPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -112,6 +116,7 @@
 		C7C0F3BF2A322B4300617B2F /* CommandPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CommandPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C0F3C02A32306C00617B2F /* ChainofResponsibilityPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ChainofResponsibilityPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C0F3C12A32689800617B2F /* CoordinatorPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CoordinatorPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7C0F3C22A33A35F00617B2F /* ServerRequestChallenge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ServerRequestChallenge.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7C3A1CD29FFF4C000E83E67 /* SCAPIClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCAPIClient; sourceTree = "<group>"; };
 		C7C3A1CF2A0063D900E83E67 /* SCDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCDomain; sourceTree = "<group>"; };
 		C7C3A1D02A00679E00E83E67 /* MoviesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDB.swift; sourceTree = "<group>"; };
@@ -260,6 +265,11 @@
 				C7C0F3BF2A322B4300617B2F /* CommandPattern.playground */,
 				C7C0F3C02A32306C00617B2F /* ChainofResponsibilityPattern.playground */,
 				C7C0F3C12A32689800617B2F /* CoordinatorPattern.playground */,
+				C7C0F3C22A33A35F00617B2F /* ServerRequestChallenge.playground */,
+				C7A6A29A2A34A6D80036E115 /* FindingAnArchitecture.playground */,
+				C7A6A29C2A34E3810036E115 /* ObjectsAndTheirDependencies.playground */,
+				C7A6A29B2A34C5880036E115 /* MVVMArchitecture.playground */,
+				C7A6A29D2A36276C0036E115 /* ReduxArchitecture.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";

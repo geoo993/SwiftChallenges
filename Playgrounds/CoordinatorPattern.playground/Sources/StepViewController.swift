@@ -10,7 +10,6 @@ public class StepViewController: UIViewController {
     private var buttonColor: UIColor!
     private var text: String!
     private var button: UIButton!
-    private var label: UILabel!
     
     public override func loadView() {
         setupView()

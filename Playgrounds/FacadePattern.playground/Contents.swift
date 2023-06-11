@@ -17,6 +17,12 @@ func example(of description: String, action: () -> Void) {
 // - Instead of requiring the consumer to understand each of these components and how they interact, you can provide a facade to expose common tasks such as placing and fulfilling a new order.
 
 
+// MARK: - Repository pattern
+// A repository pattern is a representaion of the Facade pattern where repositories contain data access objects that can call out to a server, read from disk and do any other data access task.
+// It essentially provides a facade for networking, persistence and in-memory caching. This facade creates, reads, updates and deletes data on disk and in the cloud. The repository doesn’t expose to consumers how it retrieves or stores the data.
+// When combined with MVVM, view models use the repository facade, instead of performing these operations themselves. In turn, view models transform and expose model data to views to display on-screen.
+
+
 // MARK: - Facade example
 // lets implement part of the ordering system mentioned above.
 // Here we define two simple models:
