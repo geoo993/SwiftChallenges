@@ -120,7 +120,7 @@
 		C7C3A1CD29FFF4C000E83E67 /* SCAPIClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCAPIClient; sourceTree = "<group>"; };
 		C7C3A1CF2A0063D900E83E67 /* SCDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SCDomain; sourceTree = "<group>"; };
 		C7C3A1D02A00679E00E83E67 /* MoviesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDB.swift; sourceTree = "<group>"; };
-		C7C3A1D72A00700E00E83E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C7C3A1D72A00700E00E83E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7C66AD02A155BB900C47CD8 /* TreesDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TreesDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7D348792A1E742900B6ACBA /* AVLTreesDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AVLTreesDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7E00F5F2A1D39C000F50171 /* BinarySearchTreeDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearchTreeDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -166,13 +166,12 @@
 			isa = PBXGroup;
 			children = (
 				C78855B02A30BFB2007149D9 /* README.md */,
-				C7C3A1D72A00700E00E83E67 /* Info.plist */,
 				C7B275FF2A071B8000F44092 /* Utilities */,
 				C7B275FC2A07123C00F44092 /* Pagination */,
 				C7C3A1CE2A00566300E83E67 /* MoviesDB */,
 				C7B276092A07C37400F44092 /* Views */,
 				C74C4F2629BCFC75000872C8 /* SwiftChallengesApp.swift */,
-				C74C4F2A29BCFC77000872C8 /* Assets.xcassets */,
+				C799EE882A3A315C00AE9867 /* Resources */,
 				C74C4F2C29BCFC77000872C8 /* Preview Content */,
 			);
 			path = SwiftChallenges;
@@ -272,6 +271,15 @@
 				C7A6A29D2A36276C0036E115 /* ReduxArchitecture.playground */,
 			);
 			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		C799EE882A3A315C00AE9867 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7C3A1D72A00700E00E83E67 /* Info.plist */,
+				C74C4F2A29BCFC77000872C8 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C7B275FC2A07123C00F44092 /* Pagination */ = {
@@ -540,7 +548,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftChallenges/Info.plist;
+				INFOPLIST_FILE = SwiftChallenges/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -575,7 +583,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftChallenges/Info.plist;
+				INFOPLIST_FILE = SwiftChallenges/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
