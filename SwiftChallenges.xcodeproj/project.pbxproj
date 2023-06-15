@@ -28,6 +28,7 @@
 /* Begin PBXFileReference section */
 		C71970392A1FB24E00F498ED /* TriesDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TriesDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C719703A2A20EC2900F498ED /* BinarySearchDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearchDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C71D2C612A3BAE0B00D94E82 /* AnimationProgressView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AnimationProgressView.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C726B6AF2A2D536C00DC15D0 /* Beziers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Beziers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C729E87E2A111A6B006C1357 /* QueuesDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QueuesDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C74C4F2329BCFC75000872C8 /* SwiftChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +270,7 @@
 				C7A6A29C2A34E3810036E115 /* ObjectsAndTheirDependencies.playground */,
 				C7A6A29B2A34C5880036E115 /* MVVMArchitecture.playground */,
 				C7A6A29D2A36276C0036E115 /* ReduxArchitecture.playground */,
+				C71D2C612A3BAE0B00D94E82 /* AnimationProgressView.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
