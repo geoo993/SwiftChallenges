@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C74C4F2729BCFC75000872C8 /* SwiftChallengesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74C4F2629BCFC75000872C8 /* SwiftChallengesApp.swift */; };
 		C74C4F2B29BCFC77000872C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74C4F2A29BCFC77000872C8 /* Assets.xcassets */; };
+		C750DEE02A76843E00268614 /* BlurSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750DEDF2A76843E00268614 /* BlurSheetView.swift */; };
+		C750DEE32A76864A00268614 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750DEE22A76864A00268614 /* VisualEffectBlur.swift */; };
 		C75CA9272A07E1E400DA5420 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C75CA9262A07E1E400DA5420 /* Kingfisher */; };
 		C75CA9292A07E20500DA5420 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CA9282A07E20500DA5420 /* ImageView.swift */; };
 		C75CA92B2A07E63F00DA5420 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CA92A2A07E63F00DA5420 /* Constants.swift */; };
@@ -70,6 +72,9 @@
 		C7CCC9502A6DE76C00A12D25 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = C7CCC93C2A6DE76B00A12D25 /* OFL.txt */; };
 		C7CCC9512A6DE76C00A12D25 /* Nunito-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7CCC93D2A6DE76B00A12D25 /* Nunito-Italic-VariableFont_wght.ttf */; };
 		C7CCC9522A6DE76C00A12D25 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = C7CCC93E2A6DE76B00A12D25 /* README.txt */; };
+		C7DFCAD52A768E5800A22C19 /* LazyGridLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DFCAD42A768E5800A22C19 /* LazyGridLayoutView.swift */; };
+		C7DFCAD72A76932900A22C19 /* LazyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DFCAD62A76932900A22C19 /* LazyVStackView.swift */; };
+		C7DFCAD92A76933B00A22C19 /* GridLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DFCAD82A76933B00A22C19 /* GridLayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +104,8 @@
 		C74C63E92A2D4CDB00AA8F83 /* SwiftStyleGuide.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftStyleGuide.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C74C63EA2A2D4D0100AA8F83 /* Whats New in Swift 5.7.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Whats New in Swift 5.7.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C74C63EB2A2D4E0800AA8F83 /* Whats New in Swift 5.9.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Whats New in Swift 5.9.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C750DEDF2A76843E00268614 /* BlurSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurSheetView.swift; sourceTree = "<group>"; };
+		C750DEE22A76864A00268614 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		C75CA9282A07E20500DA5420 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		C75CA92A2A07E63F00DA5420 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C7688E352A759E46006B4F61 /* ShadowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowsView.swift; sourceTree = "<group>"; };
@@ -218,6 +225,9 @@
 		C7CCC93D2A6DE76B00A12D25 /* Nunito-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		C7CCC93E2A6DE76B00A12D25 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		C7D348792A1E742900B6ACBA /* AVLTreesDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AVLTreesDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7DFCAD42A768E5800A22C19 /* LazyGridLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridLayoutView.swift; sourceTree = "<group>"; };
+		C7DFCAD62A76932900A22C19 /* LazyVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackView.swift; sourceTree = "<group>"; };
+		C7DFCAD82A76933B00A22C19 /* GridLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutView.swift; sourceTree = "<group>"; };
 		C7E00F5F2A1D39C000F50171 /* BinarySearchTreeDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearchTreeDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7E00F602A1D3D6B00F50171 /* BO-Notation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "BO-Notation.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -262,10 +272,10 @@
 			children = (
 				C78855B02A30BFB2007149D9 /* README.md */,
 				C7CCC8EC2A6DC30800A12D25 /* Examples */,
+				C750DEE12A76863100268614 /* Components */,
 				C7B275FF2A071B8000F44092 /* Utilities */,
 				C7B275FC2A07123C00F44092 /* Pagination */,
 				C7C3A1CE2A00566300E83E67 /* MoviesDB */,
-				C7B276092A07C37400F44092 /* Views */,
 				C74C4F2629BCFC75000872C8 /* SwiftChallengesApp.swift */,
 				C799EE882A3A315C00AE9867 /* Resources */,
 				C74C4F2C29BCFC77000872C8 /* Preview Content */,
@@ -370,6 +380,16 @@
 			path = Playgrounds;
 			sourceTree = "<group>";
 		};
+		C750DEE12A76863100268614 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C750DEE22A76864A00268614 /* VisualEffectBlur.swift */,
+				C7B2760C2A07C3B800F44092 /* Unwrap.swift */,
+				C75CA9282A07E20500DA5420 /* ImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C799EE882A3A315C00AE9867 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,15 +417,6 @@
 				C78C554D2A75CFEE00515A59 /* CustomCornersShape.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		C7B276092A07C37400F44092 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C7B2760C2A07C3B800F44092 /* Unwrap.swift */,
-				C75CA9282A07E20500DA5420 /* ImageView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		C7C3A1CE2A00566300E83E67 /* MoviesDB */ = {
@@ -455,6 +466,10 @@
 				C7688E492A75B824006B4F61 /* DragGestureView.swift */,
 				C7688E4B2A75B9D5006B4F61 /* MatchedGeometryEffectView.swift */,
 				C7688E4D2A75BF8D006B4F61 /* MatchedGeometryEffectAdvancedView.swift */,
+				C750DEDF2A76843E00268614 /* BlurSheetView.swift */,
+				C7DFCAD42A768E5800A22C19 /* LazyGridLayoutView.swift */,
+				C7DFCAD62A76932900A22C19 /* LazyVStackView.swift */,
+				C7DFCAD82A76933B00A22C19 /* GridLayoutView.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -608,6 +623,7 @@
 				C7B2760D2A07C3B800F44092 /* Unwrap.swift in Sources */,
 				C7B275FB2A0701BA00F44092 /* MoviesRepository.swift in Sources */,
 				C74C4F2729BCFC75000872C8 /* SwiftChallengesApp.swift in Sources */,
+				C750DEE32A76864A00268614 /* VisualEffectBlur.swift in Sources */,
 				C78C55482A75C8F000515A59 /* MoviesView.CardView.swift in Sources */,
 				C7688E4E2A75BF8D006B4F61 /* MatchedGeometryEffectAdvancedView.swift in Sources */,
 				C7CCC8FC2A6DE4A200A12D25 /* TextContentView.swift in Sources */,
@@ -616,12 +632,16 @@
 				C7688E442A75ADAD006B4F61 /* AnimationTransformView.swift in Sources */,
 				C7B275FE2A07125200F44092 /* Paginated.swift in Sources */,
 				C7B276032A071BCE00F44092 /* AnyError.swift in Sources */,
+				C7DFCAD92A76933B00A22C19 /* GridLayoutView.swift in Sources */,
+				C7DFCAD52A768E5800A22C19 /* LazyGridLayoutView.swift in Sources */,
 				C7C3A1D12A00679E00E83E67 /* MoviesDB.swift in Sources */,
+				C750DEE02A76843E00268614 /* BlurSheetView.swift in Sources */,
 				C7688E482A75B5CD006B4F61 /* LongPressButtonView.swift in Sources */,
 				C7688E462A75B319006B4F61 /* AnimatableButtonView.swift in Sources */,
 				C7B276012A071B9600F44092 /* Loading.swift in Sources */,
 				C7688E402A75A727006B4F61 /* TransitionView.swift in Sources */,
 				C7B275F62A068CE600F44092 /* MoviesView.swift in Sources */,
+				C7DFCAD72A76932900A22C19 /* LazyVStackView.swift in Sources */,
 				C7CCC8F22A6DCF4000A12D25 /* ColorsView.swift in Sources */,
 				C7CCC8FE2A6DE69100A12D25 /* CustomFontsView.swift in Sources */,
 				C7CCC8F42A6DD1E900A12D25 /* SideBarMenu.swift in Sources */,
@@ -768,7 +788,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -804,7 +824,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (

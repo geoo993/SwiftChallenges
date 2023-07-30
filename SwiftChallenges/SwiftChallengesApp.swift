@@ -4,13 +4,13 @@ import SwiftUI
 struct SwiftChallengesApp: App {
     var body: some Scene {
         WindowGroup {
-            MoviesView(
-                store: .init(
-                    initialState: .init(),
-                    reducer: MoviesDB()
-                )
-            )
-//            TransitionView()
+//            MoviesView(
+//                store: .init(
+//                    initialState: .init(),
+//                    reducer: MoviesDB()
+//                )
+//            )
+            GridLayoutView()
         }
     }
 }
