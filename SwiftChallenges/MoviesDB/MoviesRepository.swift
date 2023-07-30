@@ -59,6 +59,19 @@ extension Genre {
     }
 }
 
+extension Movie {
+    static func fixture() -> Self {
+        Movie(
+            id: "493529",
+            title: "Dungeons & Dragons: Honor Among Thieves",
+            overview: "A charming thief and a band of",
+            poster: URL(string: "https://image.tmdb.org/t/p/original/v7UF7ypAqjsFZFdjksjQ7IUpXdn.jpg"),
+            releaseDate: .now,
+            genres: [.adventure]
+        )
+    }
+}
+
 extension Array where Element == Movie {
     static func fixture() -> Self {
         [Movie(

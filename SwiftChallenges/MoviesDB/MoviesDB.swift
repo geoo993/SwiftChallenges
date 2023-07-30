@@ -22,7 +22,9 @@ struct MoviesDB: ReducerProtocol {
     }
 
     @Dependency(\.repository) var repository
-    private enum TrendingMoviesID {}
+    private enum TrendingMoviesID {
+        case timer
+    }
     
     var body: some ReducerProtocol<State, Action> {
         Scope(state: \.pagination, action: /Action.pagination) {
@@ -41,7 +43,7 @@ struct MoviesDB: ReducerProtocol {
                     )
                     await send(.pagination(.didChangeLoadingStatus(false)))
                 }
-                .cancellable(id: TrendingMoviesID.self)
+                .cancellable(id: TrendingMoviesID.timer)
             case let .didLoad(.success(result)):
                 return EffectTask(value: .pagination(.didLoadPages(result)))
             case let .pagination(.updatePages(.current(result))),
