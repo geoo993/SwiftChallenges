@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74387FA2A91601B00519D8D /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74387F92A91601B00519D8D /* NavView.swift */; };
+		C74387FC2A9164F900519D8D /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74387FB2A9164F900519D8D /* ColorPickerView.swift */; };
+		C74387FE2A9166BD00519D8D /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74387FD2A9166BD00519D8D /* DatePickerView.swift */; };
+		C74388002A91686700519D8D /* HoverEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74387FF2A91686700519D8D /* HoverEffectView.swift */; };
+		C74388022A916BE300519D8D /* ComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74388012A916BE300519D8D /* ComponentsView.swift */; };
 		C74C4F2729BCFC75000872C8 /* SwiftChallengesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74C4F2629BCFC75000872C8 /* SwiftChallengesApp.swift */; };
 		C74C4F2B29BCFC77000872C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74C4F2A29BCFC77000872C8 /* Assets.xcassets */; };
 		C750DEE02A76843E00268614 /* BlurSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750DEDF2A76843E00268614 /* BlurSheetView.swift */; };
@@ -83,6 +88,11 @@
 		C71D2C612A3BAE0B00D94E82 /* AnimationProgressView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AnimationProgressView.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C726B6AF2A2D536C00DC15D0 /* Beziers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Beziers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C729E87E2A111A6B006C1357 /* QueuesDS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QueuesDS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C74387F92A91601B00519D8D /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		C74387FB2A9164F900519D8D /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		C74387FD2A9166BD00519D8D /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		C74387FF2A91686700519D8D /* HoverEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverEffectView.swift; sourceTree = "<group>"; };
+		C74388012A916BE300519D8D /* ComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsView.swift; sourceTree = "<group>"; };
 		C74C4F2329BCFC75000872C8 /* SwiftChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74C4F2629BCFC75000872C8 /* SwiftChallengesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChallengesApp.swift; sourceTree = "<group>"; };
 		C74C4F2A29BCFC77000872C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -470,6 +480,11 @@
 				C7DFCAD42A768E5800A22C19 /* LazyGridLayoutView.swift */,
 				C7DFCAD62A76932900A22C19 /* LazyVStackView.swift */,
 				C7DFCAD82A76933B00A22C19 /* GridLayoutView.swift */,
+				C74387F92A91601B00519D8D /* NavView.swift */,
+				C74387FB2A9164F900519D8D /* ColorPickerView.swift */,
+				C74387FD2A9166BD00519D8D /* DatePickerView.swift */,
+				C74387FF2A91686700519D8D /* HoverEffectView.swift */,
+				C74388012A916BE300519D8D /* ComponentsView.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -622,7 +637,9 @@
 				C78C554A2A75C93500515A59 /* MoviesView.FiltersView.swift in Sources */,
 				C7B2760D2A07C3B800F44092 /* Unwrap.swift in Sources */,
 				C7B275FB2A0701BA00F44092 /* MoviesRepository.swift in Sources */,
+				C74387FC2A9164F900519D8D /* ColorPickerView.swift in Sources */,
 				C74C4F2729BCFC75000872C8 /* SwiftChallengesApp.swift in Sources */,
+				C74388022A916BE300519D8D /* ComponentsView.swift in Sources */,
 				C750DEE32A76864A00268614 /* VisualEffectBlur.swift in Sources */,
 				C78C55482A75C8F000515A59 /* MoviesView.CardView.swift in Sources */,
 				C7688E4E2A75BF8D006B4F61 /* MatchedGeometryEffectAdvancedView.swift in Sources */,
@@ -631,7 +648,9 @@
 				C7CCC8F02A6DC68800A12D25 /* ShapesView.swift in Sources */,
 				C7688E442A75ADAD006B4F61 /* AnimationTransformView.swift in Sources */,
 				C7B275FE2A07125200F44092 /* Paginated.swift in Sources */,
+				C74387FE2A9166BD00519D8D /* DatePickerView.swift in Sources */,
 				C7B276032A071BCE00F44092 /* AnyError.swift in Sources */,
+				C74388002A91686700519D8D /* HoverEffectView.swift in Sources */,
 				C7DFCAD92A76933B00A22C19 /* GridLayoutView.swift in Sources */,
 				C7DFCAD52A768E5800A22C19 /* LazyGridLayoutView.swift in Sources */,
 				C7C3A1D12A00679E00E83E67 /* MoviesDB.swift in Sources */,
@@ -648,6 +667,7 @@
 				C7B2760B2A07C38800F44092 /* ScrollViewDetector.swift in Sources */,
 				C78C554E2A75CFEE00515A59 /* CustomCornersShape.swift in Sources */,
 				C7688E3E2A75A521006B4F61 /* AnimationStateView.swift in Sources */,
+				C74387FA2A91601B00519D8D /* NavView.swift in Sources */,
 				C7688E382A759FC6006B4F61 /* MaskView.swift in Sources */,
 				C7CCC8F62A6DE07000A12D25 /* ToolBarViewOne.swift in Sources */,
 				C78C55462A75C8C200515A59 /* MovieView.swift in Sources */,
