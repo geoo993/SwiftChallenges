@@ -10,7 +10,7 @@ struct SwiftChallengesApp: App {
 //                    reducer: MoviesDB()
 //                )
 //            )
-            ComponentsView()
+            ScrollToTopView()
         }
     }
 }
