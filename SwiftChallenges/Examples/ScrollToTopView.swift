@@ -22,7 +22,7 @@ struct ScrollToTopView: View {
                 NavigationView {
                     CoursesView(id: 1, title: "Main", image: "illustration2", colors: [Color(#colorLiteral(red: 1, green: 0.2751207352, blue: 0.4340645075, alpha: 1)), Color(#colorLiteral(red: 1, green: 0, blue: 0.9680435061, alpha: 1))])
                         .id(main)
-                        .onChange(of: tappedTwice) { tapped in
+                        .onChange(of: tappedTwice) { _, tapped in
                             guard tapped else { return }
                             withAnimation {
                                 proxy.scrollTo(1)
@@ -40,7 +40,7 @@ struct ScrollToTopView: View {
                 NavigationView {
                     CoursesView(id: 2, title: "Courses", image: "illustration3", colors: [Color(#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)), Color(#colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1))])
                         .id(courses)
-                        .onChange(of: tappedTwice) { tapped in
+                        .onChange(of: tappedTwice) { _,tapped in
                             guard tapped else { return }
                             withAnimation {
                                 proxy.scrollTo(2)

@@ -17,6 +17,12 @@ struct TabSelectionView: View {
                     Text("Two")
                 }
                 .tag(2)
+            TabViewThree(selectedTab: $selectedTab)
+                .tabItem {
+                    Image(systemName: "arrow.right")
+                    Text("Three")
+                }
+                .tag(3)
         }
         .tint(Color.orange)
     }
@@ -47,6 +53,29 @@ struct TabViewTwo: View {
             Text("Tap to Screen One")
                 .onTapGesture {
                     selectedTab = 1
+                }
+        }
+    }
+}
+
+struct TabViewThree: View {
+    @Binding var selectedTab: Int
+    @State private var isPresentWebView = false
+
+    var body: some View {
+        ZStack {
+            Color(#colorLiteral(red: 0.1705656052, green: 0.3003894389, blue: 1, alpha: 1))
+                .ignoresSafeArea(edges: .top)
+            Text("Show Web")
+                .padding()
+                .foregroundStyle(Color.white)
+                .onTapGesture {
+                    isPresentWebView.toggle()
+                }
+                .fullScreenCover(isPresented: $isPresentWebView) {
+                    SafariWebView(url: URL(string: "https://google.com")!)
+                        .ignoresSafeArea()
+
                 }
         }
     }

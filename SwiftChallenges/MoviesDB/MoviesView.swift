@@ -25,7 +25,7 @@ struct MoviesView: View {
                     ).transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
                 }
             }
-            .onChange(of: showDetailView) { value in
+            .onChange(of: showDetailView) { _, value in
                 if !value {
                     withAnimation(.easeInOut(duration: 0.15).delay(0.4)) {
                         animateCurrentMovie = false
