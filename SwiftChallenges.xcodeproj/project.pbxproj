@@ -296,6 +296,7 @@
 		C7B2760A2A07C38800F44092 /* ScrollViewDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDetector.swift; sourceTree = "<group>"; };
 		C7B2760C2A07C3B800F44092 /* Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		C7B338932A294E9E00F3AA47 /* DesignPatterns.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DesignPatterns.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C7B6BC322AE52D3E0054A8AB /* FunctionalProgramming.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionalProgramming.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BB78B32A2E7783009745CD /* FilterReduceMap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilterReduceMap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BB78B42A2E77FF009745CD /* GridLayout.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GridLayout.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C7BB78B52A2E7A2D009745CD /* Measurement.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Measurement.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -550,6 +551,7 @@
 				C7A6A29B2A34C5880036E115 /* MVVMArchitecture.playground */,
 				C7A6A29D2A36276C0036E115 /* ReduxArchitecture.playground */,
 				C71D2C612A3BAE0B00D94E82 /* AnimationProgressView.playground */,
+				C7B6BC322AE52D3E0054A8AB /* FunctionalProgramming.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
@@ -1206,7 +1208,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1243,7 +1245,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
