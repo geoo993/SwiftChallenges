@@ -26,7 +26,7 @@ final class FetchTrendingFilmsRequestTests: XCTestCase {
                 data: FetchTrendingFilmsRequest.dummy()
             )
         )
-        let request = FetchTrendingFilmsRequest()
+        let request = FetchTrendingFilmsRequest(page: 1)
         let movies = try await apiClient.execute(request: request)
         XCTAssertEqual(movies.results.count, 20)
         XCTAssertEqual(movies.results.first?.title, "Ant-Man and the Wasp: Quantumania")
